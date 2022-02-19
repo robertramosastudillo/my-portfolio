@@ -1,8 +1,8 @@
-import { Header } from "../Header/Header";
+import { Navbar } from "../Navbar/Navbar";
 
 const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => (
   <>
-    <Header />
+    <Navbar />
     <main>{children}</main>
   </>
 );
