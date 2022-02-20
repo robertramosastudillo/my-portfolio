@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 export const NavbarStyle = styled.nav`
@@ -106,7 +107,7 @@ export const Ul: any = styled.ul`
   }
 `;
 
-export const NavLink: any = styled.li`
+export const NavLink: any = styled(Link)`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -126,7 +127,7 @@ export const NavLink: any = styled.li`
     transform: scale(0);
   }
 
-  &:hover {
+  &.active, &:hover {
     &:before {
       transition: transform 0.3s ease;
       transform: scale(1);
@@ -161,7 +162,28 @@ export const NavLink: any = styled.li`
   @media (min-width: 1024px) {
     margin: 0px 24px;
   }
+
+  /* &.active {
+    color: red !important;
+  } */
 `;
+
+// export const LinkStyle = styled(Link)`
+//   &.active {
+
+//     &:before {
+//       content: "";
+//       width: 100%;
+//       height: 2px;
+//       background-color: #9168f7;
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       transition: transform 0.3s ease;
+//       transform: scale(1);
+//     }
+//   }
+// `;
 
 export const RightNavbarHeader: any = styled.div`
   display: none;

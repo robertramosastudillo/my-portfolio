@@ -38,50 +38,54 @@ export const Navbar = () => {
             </RightNavbarHeaderSubTitle>
           </Link>
         </RightNavbarHeader>
-        <NavLink>
-          <Link
-            to="about-me"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-          >
-            01. Sobre mí
-          </Link>
+        {/* <NavLink> */}
+        <NavLink
+          to="about-me"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+        >
+          01. Sobre mí
         </NavLink>
-        <NavLink>
-          <Link
-            to="experience"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-          >
-            02. Experiencia
-          </Link>
+        {/* </NavLink>
+        <NavLink> */}
+        <NavLink
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+        >
+          02. Experiencia
         </NavLink>
-        <NavLink>
-          <Link
-            to="my-job"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-          >
-            03. Mi trabajo
-          </Link>
+        {/* </NavLink>
+        <NavLink> */}
+        <NavLink
+          to="my-job"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+        >
+          03. Mi trabajo
         </NavLink>
-        <NavLink>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-          >
-            04. Contacto
-          </Link>
+        {/* </NavLink>
+        <NavLink> */}
+        <NavLink
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+        >
+          04. Contacto
         </NavLink>
+        {/* </NavLink> */}
       </Ul>
     </NavbarStyle>
   );

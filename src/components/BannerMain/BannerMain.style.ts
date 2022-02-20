@@ -12,3 +12,14 @@ export const ContainerBannerMain = styled.section`
     padding: 136px 92px 0px 92px;
   }
 `;
+
+export const ContainerBackgroundProfile = styled.div`
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid red;
+`;
+export const BackgroundProfile = styled.img`
+  width: 253px;
+  height: 272px;
+`;
