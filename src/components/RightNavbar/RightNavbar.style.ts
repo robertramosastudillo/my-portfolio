@@ -59,10 +59,7 @@ export const Ul: any = styled.ul`
 
     &:after {
       position: absolute;
-      content: "${HexagonBackgroundIcon}";
-      bottom: 0;
-      width: 300px;
-      height: 300px;
+      /* content: url("/logo-background-icon-2.svg"); */
     }
 
     li {
