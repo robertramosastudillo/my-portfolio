@@ -1,4 +1,13 @@
-import { Logo, NavbarStyle, StyledBurger, Ul } from "./Navbar.style";
+import {
+  Logo,
+  NavbarStyle,
+  NavLink,
+  RightNavbarHeader,
+  StyledBurger,
+  Ul,
+  RightNavbarHeaderSubTitle,
+  RightNavbarHeaderTitle,
+} from "./Navbar.style";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
@@ -15,7 +24,7 @@ export const Navbar = () => {
         <div />
       </StyledBurger>
       <Ul open={open}>
-        <div>
+        <RightNavbarHeader>
           <Link
             to="banner-main"
             spy={true}
@@ -23,11 +32,13 @@ export const Navbar = () => {
             duration={800}
             onClick={() => setOpen(!open)}
           >
-            <h4>Robert Ramos</h4>
-            <p>Frontend Developer</p>
+            <RightNavbarHeaderTitle>Robert Ramos</RightNavbarHeaderTitle>
+            <RightNavbarHeaderSubTitle>
+              Frontend Developer
+            </RightNavbarHeaderSubTitle>
           </Link>
-        </div>
-        <li>
+        </RightNavbarHeader>
+        <NavLink>
           <Link
             to="about-me"
             spy={true}
@@ -37,8 +48,8 @@ export const Navbar = () => {
           >
             01. Sobre mí
           </Link>
-        </li>
-        <li>
+        </NavLink>
+        <NavLink>
           <Link
             to="experience"
             spy={true}
@@ -48,8 +59,8 @@ export const Navbar = () => {
           >
             02. Experiencia
           </Link>
-        </li>
-        <li>
+        </NavLink>
+        <NavLink>
           <Link
             to="my-job"
             spy={true}
@@ -59,8 +70,8 @@ export const Navbar = () => {
           >
             03. Mi trabajo
           </Link>
-        </li>
-        <li>
+        </NavLink>
+        <NavLink>
           <Link
             to="contact"
             spy={true}
@@ -70,7 +81,7 @@ export const Navbar = () => {
           >
             04. Contacto
           </Link>
-        </li>
+        </NavLink>
       </Ul>
     </NavbarStyle>
   );

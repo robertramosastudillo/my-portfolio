@@ -24,6 +24,7 @@ export const NavbarStyle = styled.nav`
 `;
 
 export const Logo = styled.img`
+  cursor: pointer;
   width: 54px;
   height: 18px;
 
@@ -85,44 +86,7 @@ export const Ul: any = styled.ul`
   flex-flow: row nowrap;
   color: #6838f2;
 
-  li {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 18px 10px;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:last-of-type {
-      padding-right: 0;
-    }
-  }
-
-  div {
-    display: none;
-  }
-
   @media (max-width: 768px) {
-    div {
-      display: block;
-      padding: 40px 20px 10px 20px;
-      font-size: 20px;
-      line-height: 25px;
-
-      h4 {
-        color: #ffffff;
-        font-weight: 500;
-      }
-
-      p {
-        color: #caaffd;
-        font-weight: 400;
-      }
-    }
-
     flex-flow: column nowrap;
     background-color: #6838f2;
     position: fixed;
@@ -139,17 +103,89 @@ export const Ul: any = styled.ul`
       position: absolute;
       /* content: url("/logo-background-icon-2.svg"); */
     }
+  }
+`;
 
-    li {
-      color: #fff;
-      padding: 8px 20px;
+export const NavLink: any = styled.li`
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px 10px;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #9168f7;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+  }
+
+  &:hover {
+    &:before {
+      transition: transform 0.3s ease;
+      transform: scale(1);
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 768px) {
+    color: #fff;
+    margin: 8px 20px;
+    width: 130px;
+    &:last-of-type {
+      margin-right: 20px;
+    }
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #9168f7;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: transform 0.3s ease;
+      transform: scale(0);
     }
   }
 
   @media (min-width: 1024px) {
-    li {
-      padding: 18px 24px;
-    }
+    margin: 0px 24px;
+  }
+`;
+
+export const RightNavbarHeader: any = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    cursor: pointer;
+    display: block;
+    padding: 40px 20px 10px 20px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+`;
+
+export const RightNavbarHeaderTitle: any = styled.h4`
+  @media (max-width: 768px) {
+    color: #ffffff;
+    font-weight: 500;
+  }
+`;
+
+export const RightNavbarHeaderSubTitle: any = styled.p`
+  @media (max-width: 768px) {
+    color: #caaffd;
+    font-weight: 400;
   }
 `;
 

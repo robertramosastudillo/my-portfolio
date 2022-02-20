@@ -4,25 +4,8 @@ import { ContainerBannerMain } from "./BannerMain.style";
 export const BannerMain = () => {
   return (
     <ContainerBannerMain id="banner-main">
-        <h4>Banner Main</h4>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, nemo nostrum
-      dolorem delectus aut veniam, minus impedit consectetur libero accusantium
-      numquam quidem ut consequuntur ducimus repellat iusto esse id sint. Eius
-      illo sed illum tenetur laborum minus neque doloremque ea commodi
-      dignissimos incidunt accusantium sit aperiam provident quaerat, adipisci
-      dolore id quas in, labore perspiciatis? Repellat voluptatum dolore eaque
-      necessitatibus tempora a ut aliquam asperiores incidunt amet libero
-      nostrum, ratione error corporis ad similique sunt repudiandae consectetur
-      repellendus officia esse? Culpa, dolorem sapiente. Ipsa maxime aperiam
-      saepe, consequatur officia iste? Facilis ratione culpa, veniam soluta
-      aliquid saepe quae voluptates animi tempora molestias! Veritatis
-      laboriosam ipsum voluptatum qui delectus nobis maxime quos sit possimus
-      repellat! Reiciendis saepe ratione mollitia molestias laboriosam accusamus
-      porro laudantium exercitationem itaque totam autem architecto quae ex
-      incidunt sapiente aut, adipisci necessitatibus dicta nostrum corrupti id
-      iusto sint hic? Rerum, tempora commodi magnam sed recusandae perferendis
-      laborum blanditiis repellendus, earum, qui ab quod animi dolores incidunt
-      repellat.
+      <h4>Banner Main</h4>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut necessitatibus inventore dolore ratione illum hic consequuntur reiciendis porro, nihil, aliquid totam explicabo aspernatur ipsa obcaecati delectus quasi facere. Harum soluta quibusdam eligendi eveniet ratione consequuntur eius ab accusamus facere, temporibus rerum voluptatum tempora aspernatur mollitia. Recusandae, eius natus culpa doloribus ipsum pariatur quibusdam labore asperiores esse autem reiciendis repudiandae sed vel obcaecati. Explicabo nemo asperiores quasi aliquid, suscipit sint minus laboriosam repellendus cupiditate et alias vel odit voluptatum officia rem. Neque aut, asperiores sed eveniet voluptatem iure, perspiciatis in porro doloremque natus molestias. Repudiandae, voluptatibus? Veritatis enim consequatur voluptates dolores corporis, hic amet quisquam quibusdam, quaerat, totam ducimus aliquam. At doloribus consectetur ducimus, libero architecto tenetur omnis ad porro qui enim maiores neque aperiam, a voluptatum temporibus eius itaque similique quisquam ea animi eligendi accusamus dolores. Sunt dolor qui molestiae assumenda optio, quidem distinctio hic ab reiciendis porro excepturi alias, perferendis ut, pariatur eaque tempora officiis illum deleniti cumque animi ex quae architecto? Fuga laboriosam eligendi doloribus et alias, deserunt soluta ut reprehenderit maxime dolor totam facere iure voluptas non nulla numquam. Et ex, quos, numquam eaque tempore voluptas facere, velit quas commodi eos tenetur cum omnis! Praesentium quisquam atque repellendus laborum delectus, impedit nulla magnam aliquam eaque unde enim quidem dolore nisi accusamus, voluptatem quo ab minus laudantium pariatur. In pariatur nam porro quisquam ipsa quo laudantium aperiam suscipit laborum enim harum quaerat eius error esse doloremque, explicabo iusto fugit ducimus incidunt, rerum sed facilis nostrum. Quae placeat commodi beatae unde, impedit rem iste corporis, ipsam dolor quaerat excepturi dolore molestias vero magni quidem, officia facilis in sit ducimus accusamus sunt omnis quo minima deleniti! Explicabo cumque provident amet hic. Nam eveniet suscipit ipsa! Ipsa minima, repellat voluptas ullam fugit exercitationem suscipit quidem modi dolore. Eum quibusdam, nisi tempore quia aliquam aliquid perferendis accusamus temporibus eaque atque? Praesentium sapiente tempore quod obcaecati, eveniet dignissimos itaque mollitia magni, non perferendis magnam ipsum? Nostrum reiciendis, debitis, mollitia porro consequuntur aperiam laudantium cumque omnis unde illum molestiae itaque libero! Ratione soluta id eius harum illum perferendis. Quaerat officiis possimus at aperiam hic ratione corporis cumque expedita aut, excepturi incidunt ab illo alias eaque quis nesciunt voluptatem eius fuga culpa illum soluta. Beatae exercitationem in repudiandae adipisci sed quia! Quisquam itaque pariatur, corporis quidem odio nihil. Optio, minima minus rem, possimus laborum voluptatibus ullam corporis dicta rerum, sapiente eveniet obcaecati architecto fuga quas.
     </ContainerBannerMain>
   );
 };
