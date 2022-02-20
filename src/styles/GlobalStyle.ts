@@ -21,6 +21,14 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Poppins',sans-serif;
         font-size: 1.6rem;
     }
+
+    p {
+        font-family: 'Poppins',sans-serif;
+        font-size: 14px;
+        font-weight:300;
+        color:#6838F2;
+        margin: 0;
+    }
 `;
 
 export default GlobalStyle;
