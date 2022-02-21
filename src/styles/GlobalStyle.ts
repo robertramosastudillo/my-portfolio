@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
         font-weight:300;
         color:#6838F2;
         margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+        
     }
 `;
 
