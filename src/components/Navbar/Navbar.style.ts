@@ -102,7 +102,11 @@ export const Ul: any = styled.ul`
 
     &:after {
       position: absolute;
-      /* content: url("/logo-background-icon-2.svg"); */
+      content: url("/logo-background-icon.svg");
+      bottom: -6px;
+      left: 0;
+      /* zoom: 200%; */
+      
     }
   }
 `;
