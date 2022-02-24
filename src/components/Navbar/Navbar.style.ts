@@ -13,6 +13,7 @@ export const NavbarStyle = styled.nav`
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   position: fixed;
+  z-index: 100;
 
   @media (min-width: 768px) {
     height: 72px;
