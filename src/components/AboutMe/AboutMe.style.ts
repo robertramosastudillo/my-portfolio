@@ -8,7 +8,7 @@ export const ContainerAboutMe = styled.section`
 export const ContainerBackgroundAboutMe = styled.div`
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 0 auto;
   position: relative;
   width: 343px;
@@ -19,7 +19,7 @@ export const BgAboutMePrimary = styled.img`
   width: 100%;
   height: 100%;
   position: absolute;
-  animation: rotateHexan 4s ease-in-out alternate-reverse infinite;
+  /* animation: rotateHexan 4s ease-in-out alternate-reverse infinite; */
 
   @keyframes rotateHexan {
     0% {
