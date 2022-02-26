@@ -13,28 +13,25 @@ import {
 } from "./AboutMe.style";
 
 export const AboutMe = () => {
-  const images = ["tiro-al-blanco.svg", "cohete.svg", "solidario.svg"];
+  const carouselContent = [
+    { image: "tiro-al-blanco.svg", text: "Acertado" },
+    { image: "cohete.svg", text: "Objetivo" },
+    { image: "solidario.svg", text: "Solidario" },
+  ];
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(images[0]);
-
-  const texts = ["Acertado", "Objetivo", "Solidario"];
-  const [selectedTextIndex, setSelectedTextIndex] = useState(0);
-  const [selectedText, setSelectedText] = useState(texts[0]);
-
-  const [loaded, setLoaded] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(carouselContent[0].image);
+  const [selectedText, setSelectedText] = useState(carouselContent[0].text);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      selectNewImage(selectedIndex, images);
-      selectNewText(selectedTextIndex, texts);
+      selectNewImage(selectedIndex, carouselContent);
     }, 4000);
     return () => clearInterval(interval);
   });
 
-  const selectNewImage = (index: number, images: string[], next = true) => {
-    setLoaded(false);
+  const selectNewImage = (index: number, carouselContent: any, next = true) => {
     const condition = next
-      ? selectedIndex < images.length - 1
+      ? selectedIndex < carouselContent.length - 1
       : selectedIndex > 0;
     const nextIndex = next
       ? condition
@@ -42,25 +39,10 @@ export const AboutMe = () => {
         : 0
       : condition
       ? selectedIndex - 1
-      : images.length - 1;
-    setSelectedImage(images[nextIndex]);
+      : carouselContent.length - 1;
+    setSelectedImage(carouselContent[nextIndex].image);
+    setSelectedText(carouselContent[nextIndex].text);
     setSelectedIndex(nextIndex);
-  };
-
-  const selectNewText = (index: number, texts: string[], next = true) => {
-    setLoaded(false);
-    const condition = next
-      ? selectedTextIndex < texts.length - 1
-      : selectedTextIndex > 0;
-    const nextIndex = next
-      ? condition
-        ? selectedTextIndex + 1
-        : 0
-      : condition
-      ? selectedTextIndex - 1
-      : texts.length - 1;
-    setSelectedText(texts[nextIndex]);
-    setSelectedTextIndex(nextIndex);
   };
 
   return (
@@ -78,12 +60,7 @@ export const AboutMe = () => {
           </ContainerSecondaryHexanText>
           <BgAboutMeSecondary src="/hexagon-bg-secondary.svg" alt="Sobre mi" />
         </ContainerSecondaryHexan>
-        <BgAboutMeIcon
-          src={selectedImage}
-          alt="Icono"
-          className={loaded ? "loaded" : " "}
-          onLoad={() => setLoaded(true)}
-        />
+        <BgAboutMeIcon src={selectedImage} alt="Icono" />
       </ContainerBackgroundAboutMe>
     </ContainerAboutMe>
   );

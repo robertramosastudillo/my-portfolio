@@ -8,7 +8,6 @@ export const ContainerAboutMe = styled.section`
 export const ContainerBackgroundAboutMe = styled.div`
   display: flex;
   justify-content: center;
-  border: 1px solid red;
   margin: 0 auto;
   position: relative;
   width: 343px;
@@ -19,16 +18,19 @@ export const BgAboutMePrimary = styled.img`
   width: 100%;
   height: 100%;
   position: absolute;
-  /* animation: rotateHexan 4s ease-in-out alternate-reverse infinite; */
 
-  @keyframes rotateHexan {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-    100% {
+  @media (min-width: 430px) {
+    animation: rotateHexan 4s ease-in-out alternate-reverse infinite;
+
+    @keyframes rotateHexan {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
       -webkit-transform: rotate(-25deg);
-      transform: rotate(-25deg);
+        transform: rotate(-25deg); 
+      }
     }
   }
 `;
