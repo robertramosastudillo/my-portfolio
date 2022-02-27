@@ -5,10 +5,13 @@ import {
   AchievementItem,
   ContainerExperience,
   ContainerInfoExperience,
+  ContainerLogo,
   Layer1,
   Layer2,
   Layer3,
   Layer4,
+  Line,
+  LogoImage,
   TabContent,
   TabContentItem,
   TabItem,
@@ -21,7 +24,7 @@ export const Experience = () => {
   const companies = [
     {
       id: 1,
-      short_name: "Playtechla",
+      short_name: "Playtech",
       full_name: "Playtechnologies S.A.S",
       start_date: "Febrero 2019",
       end_date: "Febrero 2020",
@@ -32,6 +35,7 @@ export const Experience = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       achievement_2:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      logo: "logo-playtech.svg",
     },
     {
       id: 2,
@@ -46,6 +50,7 @@ export const Experience = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       achievement_2:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      logo: "logo-sophos.svg",
     },
     {
       id: 3,
@@ -60,6 +65,7 @@ export const Experience = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       achievement_2:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      logo: "logo-playtech.svg",
     },
     {
       id: 4,
@@ -74,6 +80,7 @@ export const Experience = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       achievement_2:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      logo: "logo-playtech.svg",
     },
   ];
 
@@ -117,6 +124,7 @@ export const Experience = () => {
             position,
             achievement_1,
             achievement_2,
+            logo,
           }) => (
             <TabContentItem
               key={id}
@@ -134,6 +142,12 @@ export const Experience = () => {
                 <AchievementItem>{achievement_1}</AchievementItem>
                 <AchievementItem>{achievement_2}</AchievementItem>
               </AchievementContainer>
+
+              <Line></Line>
+
+              <ContainerLogo>
+                <LogoImage src={`companies/${logo}`} />
+              </ContainerLogo>
             </TabContentItem>
           )
         )}

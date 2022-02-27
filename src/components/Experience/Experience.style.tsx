@@ -3,8 +3,20 @@ import styled from "styled-components";
 export const ContainerExperience = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 100px 20px 0px 20px;
   border: 1px solid green;
+  padding: 100px 20px 0px 20px;
+
+  @media (min-width: 768px) {
+    padding: 100px 48px 0px 48px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 96px 92px 0px 92px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 136px 92px 0px 92px;
+  }
 `;
 
 export const ContainerInfoExperience = styled.div``;
@@ -41,25 +53,38 @@ export const TabItem = styled.a`
 export const TabContent = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   background-color: #6838f2;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 export const TabTextPosition = styled.h4`
   font-weight: 400;
   font-size: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 `;
 
 export const TabContentItem = styled.div`
   padding: 20px;
   color: #fcfaff;
-  transform: 1s;
+  width: 100%;
 
+  @media (min-width: 1024px) {
+    padding: 40px;
+  }
   &.content {
     display: none;
   }
 
   &.active-content {
     display: block;
+   
   }
 `;
 
@@ -67,6 +92,10 @@ export const TabTextItem = styled.p`
   color: #fcfaff;
   font-weight: 300;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const AchievementContainer = styled.ul`
@@ -77,24 +106,80 @@ export const AchievementItem = styled.li`
   font-size: 14px;
   margin: 0px 20px;
 
+  @media (min-width: 1024px) {
+    margin: 0px 40px 0px 20px;
+  }
+
   &:last-child {
     margin: 0;
   }
 `;
 
+export const Line = styled.div`
+  height: 1px;
+  margin: 20px auto auto auto;
+  background-color: #fcfaff;
+`;
+
+export const ContainerLogo = styled.div`
+  width: 120px;
+  height: auto;
+  margin: 20px 0px 0px 0px;
+`;
+export const LogoImage = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
 export const Layer1 = styled.div`
-  height: 20px;
+  height: 24px;
   background-color: #9168f7;
+
+  @media (min-width: 768px) {
+    height: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 64px;
+    height: inherit;
+  }
 `;
 export const Layer2 = styled.div`
-  height: 20px;
+  height: 24px;
   background-color: #ab87fb;
+
+  @media (min-width: 768px) {
+    height: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 64px;
+    height: inherit;
+  }
 `;
 export const Layer3 = styled.div`
-  height: 20px;
+  height: 24px;
   background-color: #caaffd;
+
+  @media (min-width: 768px) {
+    height: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 64px;
+    height: inherit;
+  }
 `;
 export const Layer4 = styled.div`
-  height: 20px;
+  height: 24px;
   background-color: #e5d7fe;
+
+  @media (min-width: 768px) {
+    height: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 64px;
+    height: inherit;
+  }
 `;
