@@ -19,7 +19,15 @@ export const ContainerExperience = styled.section`
   }
 `;
 
-export const ContainerInfoExperience = styled.div``;
+export const ContainerInfoExperience = styled.div`
+  @media (min-width: 1280px) {
+    max-width: 494px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 565px;
+  }
+`;
 
 export const Tabs = styled.div`
   display: flex;
@@ -56,7 +64,6 @@ export const TabContent = styled.div`
   background-color: #6838f2;
   margin-bottom: 20px;
   border-radius: 4px 4px 6px 6px;
-  
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -87,7 +94,6 @@ export const TabContentItem = styled.div`
 
   &.active-content {
     display: block;
-   
   }
 `;
 
