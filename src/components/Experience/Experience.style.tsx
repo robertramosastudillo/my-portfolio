@@ -55,9 +55,12 @@ export const TabContent = styled.div`
   flex-direction: column;
   background-color: #6838f2;
   margin-bottom: 20px;
+  border-radius: 4px 4px 6px 6px;
+  
 
   @media (min-width: 1024px) {
     flex-direction: row;
+    border-radius: 4px 6px 6px 4px;
   }
 `;
 export const TabTextPosition = styled.h4`
@@ -173,6 +176,7 @@ export const Layer3 = styled.div`
 export const Layer4 = styled.div`
   height: 24px;
   background-color: #e5d7fe;
+  border-radius: 0px 0px 4px 4px;
 
   @media (min-width: 768px) {
     height: 30px;
@@ -181,5 +185,6 @@ export const Layer4 = styled.div`
   @media (min-width: 1024px) {
     width: 64px;
     height: inherit;
+    border-radius: 0px 4px 4px 0px;
   }
 `;
