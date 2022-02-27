@@ -1,23 +1,82 @@
 import React, { useEffect, useState } from "react";
+import { SectionTitle } from "../../styles/CommonComponents";
 import {
+  AboutMeItem,
+  AboutMeTecnologiesContainer,
+  AboutMeTextContainer,
   BgAboutMeIcon,
   BgAboutMePrimary,
   BgAboutMeSecondary,
+  BgItem,
   ContainerAboutMe,
   ContainerBackgroundAboutMe,
   ContainerCualidadClose,
   ContainerCualidadStart,
+  ContainerInfoAboutMe,
   ContainerSecondaryHexan,
   ContainerSecondaryHexanText,
   Cualidad,
+  ItemImage,
 } from "./AboutMe.style";
 
 export const AboutMe = () => {
+  const stacks = [
+    {
+      icon: "html.svg",
+      title: "HTML",
+    },
+    {
+      icon: "css.svg",
+      title: "CSS",
+    },
+    {
+      icon: "js.svg",
+      title: "Javascript",
+    },
+    {
+      icon: "react.svg",
+      title: "ReactJS",
+    },
+    {
+      icon: "redux.svg",
+      title: "Redux",
+    },
+    {
+      icon: "nextjs.svg",
+      title: "NextJS",
+    },
+    {
+      icon: "sass.svg",
+      title: "Sass",
+    },
+    {
+      icon: "styled-components.svg",
+      title: "Styled Components",
+    },
+    {
+      icon: "ts.svg",
+      title: "Typescript",
+    },
+    {
+      icon: "nodejs.svg",
+      title: "NodeJS",
+    },
+    {
+      icon: "mongodb.svg",
+      title: "MongoDB",
+    },
+    {
+      icon: "expressjs.svg",
+      title: "ExpressJS",
+    }
+  ];
+
   const carouselContent = [
     { image: "tiro-al-blanco.svg", text: "Acertado" },
     { image: "cohete.svg", text: "Objetivo" },
     { image: "solidario.svg", text: "Solidario" },
   ];
+
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(carouselContent[0].image);
   const [selectedText, setSelectedText] = useState(carouselContent[0].text);
@@ -62,6 +121,34 @@ export const AboutMe = () => {
         </ContainerSecondaryHexan>
         <BgAboutMeIcon src={selectedImage} alt="Icono" />
       </ContainerBackgroundAboutMe>
+      <ContainerInfoAboutMe>
+        <SectionTitle>
+          <span>01.</span>Sobre mí
+        </SectionTitle>
+        <AboutMeTextContainer>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industries standard dummy text
+            ever since the 1500s.
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industries standard dummy text
+            ever since the 1500s.
+          </p>
+          <p>Lorem Ipsum is simply dummy text of the printing</p>
+        </AboutMeTextContainer>
+        <AboutMeTecnologiesContainer>
+          {stacks.map(({ icon, title }, index) => (
+            <AboutMeItem key={index}>
+              <BgItem>
+                <ItemImage src={`tecnologies/${icon}`} alt={title} />
+              </BgItem>
+              <p>{title}</p>
+            </AboutMeItem>
+          ))}
+        </AboutMeTecnologiesContainer>
+      </ContainerInfoAboutMe>
     </ContainerAboutMe>
   );
 };
