@@ -91,7 +91,7 @@ export const Experience = () => {
         </SectionTitle>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industries standard dummy text ever
           since the 1500s.
         </p>
       </ContainerInfoExperience>
