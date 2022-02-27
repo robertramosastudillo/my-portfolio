@@ -68,7 +68,7 @@ export const AboutMe = () => {
     {
       icon: "expressjs.svg",
       title: "ExpressJS",
-    }
+    },
   ];
 
   const carouselContent = [
@@ -104,6 +104,7 @@ export const AboutMe = () => {
     setSelectedIndex(nextIndex);
   };
 
+
   return (
     <ContainerAboutMe id="about-me">
       <ContainerBackgroundAboutMe>
@@ -114,7 +115,9 @@ export const AboutMe = () => {
         <ContainerSecondaryHexan>
           <ContainerSecondaryHexanText>
             <ContainerCualidadStart> {"<cualidad>"}</ContainerCualidadStart>
-            <Cualidad>{selectedText}</Cualidad>
+            <Cualidad >
+              {selectedText}
+            </Cualidad>
             <ContainerCualidadClose> {"</cualidad>"}</ContainerCualidadClose>
           </ContainerSecondaryHexanText>
           <BgAboutMeSecondary src="/hexagon-bg-secondary.svg" alt="Sobre mi" />

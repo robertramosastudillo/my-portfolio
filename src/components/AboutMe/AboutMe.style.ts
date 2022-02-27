@@ -173,9 +173,6 @@ export const BgAboutMeIcon = styled.img`
   top: 25%;
   animation: rotateIcon 4s ease-in-out alternate-reverse infinite;
 
-  /* width: 164px;
-  height: 164px; */
-
   @media (min-width: 768px) {
     width: 200px;
     height: 200px;
