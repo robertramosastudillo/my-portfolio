@@ -29,8 +29,13 @@ export const ContainerBackgroundAboutMe = styled.div`
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  width: 343px;
-  height: 343px;
+  width: 264px;
+  height: 264px;
+
+   @media (min-width: 375px) {
+    width: 280px;
+    height: 280px;
+  }  
 
   @media (min-width: 768px) {
     width: 408px;
@@ -52,26 +57,23 @@ export const BgAboutMePrimary = styled.img`
   width: 100%;
   height: 100%;
   position: absolute;
+  animation: rotateHexan 4s ease-in-out alternate-reverse infinite;
 
-  @media (min-width: 430px) {
-    animation: rotateHexan 4s ease-in-out alternate-reverse infinite;
-
-    @keyframes rotateHexan {
-      0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-      }
-      100% {
-        -webkit-transform: rotate(-25deg);
-        transform: rotate(-25deg);
-      }
+  @keyframes rotateHexan {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
     }
   }
 `;
 
 export const ContainerSecondaryHexan = styled.div`
-  width: 164px;
-  height: 164px;
+  width: 128px;
+  height: 128px;
   position: absolute;
   bottom: -24px;
   left: 28px;
@@ -108,7 +110,7 @@ export const ContainerSecondaryHexanText = styled.div`
 export const ContainerCualidadStart = styled.p`
   font-size: 12px;
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 0;
 
   @media (min-width: 768px) {
@@ -126,7 +128,7 @@ export const ContainerCualidadStart = styled.p`
 export const ContainerCualidadClose = styled.p`
   font-size: 12px;
   position: absolute;
-  bottom: 15px;
+  bottom: 12px;
   left: 0;
 
   @media (min-width: 768px) {
@@ -162,14 +164,17 @@ export const BgAboutMeSecondary = styled.img`
   height: 100%;
 `;
 export const BgAboutMeIcon = styled.img`
-  width: 164px;
-  height: 164px;
+  width: 132px;
+  height: 132px;
   position: absolute;
   bottom: 25%;
   left: 25%;
   right: 25%;
   top: 25%;
   animation: rotateIcon 4s ease-in-out alternate-reverse infinite;
+
+  /* width: 164px;
+  height: 164px; */
 
   @media (min-width: 768px) {
     width: 200px;
