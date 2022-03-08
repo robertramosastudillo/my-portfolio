@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContainerExperience = styled.section`
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 100px 20px 0px 20px;
 
   @media (min-width: 768px) {

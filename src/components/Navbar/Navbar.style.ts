@@ -107,7 +107,6 @@ export const Ul: any = styled.ul`
       bottom: -6px;
       left: 0;
       /* zoom: 200%; */
-      
     }
   }
 `;
@@ -132,7 +131,8 @@ export const NavLink: any = styled(Link)`
     transform: scale(0);
   }
 
-  &.active, &:hover {
+  &.active,
+  &:hover {
     &:before {
       transition: transform 0.3s ease;
       transform: scale(1);
