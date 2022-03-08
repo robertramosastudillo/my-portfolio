@@ -10,7 +10,6 @@ import {
   TextItem,
   AchievementContainer,
   AchievementItem,
-  ContainerImageFeacturedProject,
   ContainerButtons,
   SecondaryButton,
 } from "./MyJob.style";
@@ -30,12 +29,11 @@ export const MyJob = () => {
       </ContainerInfoMyJob>
       {/* 1 */}
       <ContainerFeacturedProjects>
-        <ContainerImageFeacturedProject>
-          <FeacturedProject
-            src="projects/feactured-project-1.svg"
-            alt="Proyecto 1"
-          />
-        </ContainerImageFeacturedProject>
+        <FeacturedProject
+          src="projects/feactured-project-1.svg"
+          alt="Proyecto 1"
+        />
+
         <ContainerInfoFeacturedProject>
           <TextItem>Freelance project - 2021</TextItem>
           <TextPosition>Frontend Developer</TextPosition>
@@ -52,18 +50,16 @@ export const MyJob = () => {
           </AchievementContainer>
 
           <ContainerButtons>
-          <SecondaryButton>Link al proyecto</SecondaryButton>
+            <SecondaryButton>Link al proyecto</SecondaryButton>
           </ContainerButtons>
         </ContainerInfoFeacturedProject>
       </ContainerFeacturedProjects>
       {/* 2 */}
       <ContainerFeacturedProjects>
-        <ContainerImageFeacturedProject>
-          <FeacturedProject
-            src="projects/feactured-project-1.svg"
-            alt="Proyecto 1"
-          />
-        </ContainerImageFeacturedProject>
+        <FeacturedProject
+          src="projects/feactured-project-1.svg"
+          alt="Proyecto 1"
+        />
         <ContainerInfoFeacturedProject>
           <TextItem>Freelance project - 2021</TextItem>
           <TextPosition>Frontend Developer</TextPosition>
@@ -80,11 +76,10 @@ export const MyJob = () => {
           </AchievementContainer>
 
           <ContainerButtons>
-          <SecondaryButton>Link al proyecto</SecondaryButton>
+            <SecondaryButton>Link al proyecto</SecondaryButton>
           </ContainerButtons>
         </ContainerInfoFeacturedProject>
       </ContainerFeacturedProjects>
-      
     </ContainerMyJob>
   );
 };
