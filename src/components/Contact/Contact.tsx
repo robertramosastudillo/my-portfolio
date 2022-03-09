@@ -1,13 +1,22 @@
 import React from "react";
-import { SectionContainer } from "../../styles/CommonComponents";
-import { ContainerContact } from "./Contact.style";
+import { SectionContainer, SectionTitle } from "../../styles/CommonComponents";
+import { ContainerContact, ContainerInfoContact } from "./Contact.style";
 
 export const Contact = () => {
   return (
     <SectionContainer>
       <ContainerContact id="contact">
-        <h4>Contact</h4>
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, laudantium! Quis dignissimos ab officia at modi optio temporibus quisquam aperiam quo ex in laboriosam vero laborum ut aut sint porro, corporis ratione. Quidem, totam quas vitae vero nihil, natus pariatur corrupti eum commodi fugit quibusdam? Cum nihil sit odit optio! Ratione unde porro optio, ipsa voluptatem repellendus? Temporibus, facilis quas. Nihil sequi quam quidem ad, alias nobis excepturi quod eaque voluptate sapiente perspiciatis voluptatum. Cupiditate ullam veritatis quam laudantium dignissimos eos voluptatibus explicabo facilis reiciendis praesentium, incidunt consectetur quidem itaque delectus consequuntur laborum veniam, fugit esse quos quibusdam dolore numquam perspiciatis error! Neque tenetur iusto dicta, repellendus, impedit, obcaecati id reprehenderit debitis hic distinctio sequi? Officiis harum, aliquid, qui ipsa totam nam pariatur vitae temporibus, in dolorum cupiditate debitis sint sequi? Sequi, velit explicabo! Eveniet maiores quis dolores sunt officia, nihil iste voluptatibus quidem natus, facere accusantium, magni minus praesentium. Nulla tenetur veniam dolor eligendi earum, perferendis at reiciendis, commodi necessitatibus eum quia et? Quia omnis ducimus illum reprehenderit illo sit hic ad dignissimos a rerum cum officia at possimus repellat qui, quo veniam aut eaque placeat cumque? Cum error atque cumque tempora animi numquam optio pariatur repudiandae explicabo autem reprehenderit modi exercitationem obcaecati unde consequatur ipsum, ab quia eveniet. Minima, suscipit repudiandae. Laudantium a optio laborum nam. Ipsum, sunt fugit? Aperiam, perspiciatis beatae esse adipisci nesciunt voluptates veniam ab, nostrum vero asperiores maiores placeat laudantium? Ut adipisci odit accusamus, ipsum labore necessitatibus magnam repellat itaque, fugit eveniet incidunt, molestias doloribus quasi ipsam corporis sunt nisi beatae ullam? Architecto ad fugiat illum odio. Alias aliquid, quasi eum velit illo officiis placeat est doloribus fugit accusantium rem consequatur dicta iusto optio repellendus officia reprehenderit inventore modi nesciunt adipisci. Molestias sequi adipisci, dolorem illo magnam, voluptate necessitatibus nihil accusantium consequuntur non assumenda? Labore nihil esse dolor! Mollitia totam sunt harum perferendis atque at magnam soluta blanditiis aut non possimus labore, eum corrupti? Eaque praesentium dolore voluptates iure nesciunt voluptas delectus sit ducimus culpa ad molestiae odit nobis quam, vero consequuntur tenetur iusto architecto voluptatibus sint. Dolore, ex ullam molestias minima quam modi dolores neque deserunt praesentium iusto blanditiis debitis temporibus nesciunt harum veniam aliquam at commodi ad voluptatibus iste accusantium eveniet iure! Aut asperiores debitis rem necessitatibus esse repudiandae ducimus nihil, culpa voluptatum, saepe recusandae praesentium, aliquid nobis. Dolorem repudiandae voluptatibus delectus obcaecati necessitatibus id enim maiores nostrum. Sequi deserunt maiores quam?
+      <ContainerInfoContact>
+        <SectionTitle>
+          <span>04.</span>Contácto
+        </SectionTitle>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        </p>
+
+        <p>Robertramos@gmail.com</p>
+        <p>+57 315 853 8138</p>
+      </ContainerInfoContact>
       </ContainerContact>
     </SectionContainer>
   );
