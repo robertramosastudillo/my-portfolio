@@ -8,7 +8,6 @@ export const NavbarStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(252, 250, 255, 0.1); */
   background-color: rgba(252, 250, 255, 1);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
@@ -103,10 +102,9 @@ export const Ul: any = styled.ul`
 
     &:after {
       position: absolute;
-      content: url("/logo-background-icon.svg");
+      content: url("navbar/hexan-bg-menu.svg");
       bottom: -6px;
       left: 0;
-      /* zoom: 200%; */
     }
   }
 `;
@@ -167,28 +165,7 @@ export const NavLink: any = styled(Link)`
   @media (min-width: 1024px) {
     margin: 0px 24px;
   }
-
-  /* &.active {
-    color: red !important;
-  } */
 `;
-
-// export const LinkStyle = styled(Link)`
-//   &.active {
-
-//     &:before {
-//       content: "";
-//       width: 100%;
-//       height: 2px;
-//       background-color: #9168f7;
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       transition: transform 0.3s ease;
-//       transform: scale(1);
-//     }
-//   }
-// `;
 
 export const RightNavbarHeader: any = styled.div`
   display: none;

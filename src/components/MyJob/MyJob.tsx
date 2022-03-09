@@ -26,7 +26,7 @@ export const MyJob = () => {
   const featuredProjects = [
     {
       id: 1,
-      image: "projects/feactured-project-1.svg",
+      image: "feactured-project-1.svg",
       name: "Freelance project",
       year: "2021",
       type_project: "Frontend Developer",
@@ -37,7 +37,7 @@ export const MyJob = () => {
     },
     {
       id: 2,
-      image: "projects/feactured-project-1.svg",
+      image: "feactured-project-1.svg",
       name: "Freelance project 2",
       year: "2021",
       type_project: "Full Stack Developer",
@@ -102,7 +102,7 @@ export const MyJob = () => {
           tecnology_2,
         }) => (
           <ContainerFeacturedProjects key={id}>
-            <FeacturedProject src={image} alt="Proyecto 1" />
+            <FeacturedProject src={`projects/feactured/${image}`} alt="Proyecto 1" />
 
             <ContainerInfoFeacturedProject>
               <TextItem>

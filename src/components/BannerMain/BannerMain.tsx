@@ -14,7 +14,7 @@ export const BannerMain = () => {
   return (
     <ContainerBannerMain id="banner-main">
       <ContainerBackgroundProfile>
-        <BackgroundProfile src="/background-profile.svg" alt="Perfil" />
+        <BackgroundProfile src="banner-main/profile.svg" alt="Perfil Robert Andres Ramos" />
       </ContainerBackgroundProfile>
       <ContainerInfoProfile>
         <p>Hola, mi nombre es</p>

@@ -48,7 +48,7 @@ export const Contact = () => {
         <ContainerContactIcons>
           {socialMedia.map(({ id, icon, title }) => (
             <BgItem key={id}>
-              <ItemImage src={`contacts/${icon}`} alt={title} />
+              <ItemImage src={`social-media/${icon}`} alt={title} />
             </BgItem>
           ))}
         </ContainerContactIcons>

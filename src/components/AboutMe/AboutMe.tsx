@@ -72,11 +72,11 @@ export const AboutMe = () => {
   ];
 
   const carouselContent = [
-    { image: "tiro-al-blanco.svg", text: "Acertado" },
-    { image: "cohete.svg", text: "Objetivo" },
+    { image: "acertivo.svg", text: "Acertivo" },
+    { image: "objetivo.svg", text: "Objetivo" },
     { image: "solidario.svg", text: "Solidario" },
     { image: "innovador.svg", text: "Innovador" },
-    { image: "introspeccion.svg", text: "Resiliente" },
+    { image: "resiliente.svg", text: "Resiliente" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -106,25 +106,22 @@ export const AboutMe = () => {
     setSelectedIndex(nextIndex);
   };
 
-
   return (
     <ContainerAboutMe id="about-me">
       <ContainerBackgroundAboutMe>
         <BgAboutMePrimary
-          src="/hexagon-background-about-me.svg"
+          src="about-me/hexagon-bg-primary.svg"
           alt="Sobre mi"
         />
         <ContainerSecondaryHexan>
           <ContainerSecondaryHexanText>
             <ContainerCualidadStart> {"<cualidad>"}</ContainerCualidadStart>
-            <Cualidad >
-              {selectedText}
-            </Cualidad>
+            <Cualidad>{selectedText}</Cualidad>
             <ContainerCualidadClose> {"</cualidad>"}</ContainerCualidadClose>
           </ContainerSecondaryHexanText>
-          <BgAboutMeSecondary src="/hexagon-bg-secondary.svg" alt="Sobre mi" />
+          <BgAboutMeSecondary src="about-me/hexagon-bg-secondary.svg" alt="Sobre mi" />
         </ContainerSecondaryHexan>
-        <BgAboutMeIcon src={selectedImage} alt="Icono" />
+        <BgAboutMeIcon src={`qualities/${selectedImage}`} alt="Icono" />
       </ContainerBackgroundAboutMe>
       <ContainerInfoAboutMe>
         <SectionTitle>

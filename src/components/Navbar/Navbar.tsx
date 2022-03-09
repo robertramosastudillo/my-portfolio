@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <NavbarStyle>
       <Link to="banner-main" spy={true} smooth={true} duration={800}>
-        <Logo src="/logo.svg" alt="Robert Ramos" />
+        <Logo src="navbar/logo.svg" alt="Robert Ramos" />
       </Link>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
