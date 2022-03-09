@@ -5,19 +5,19 @@ export const ContainerContact = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 20px 0px 20px;
-  border: 1px solid red;
+  padding: 0px 20px 0px 20px;
+  /* border: 1px solid red; */
 
   @media (min-width: 768px) {
-    padding: 100px 48px 0px 48px;
+    padding: 0px 48px 0px 48px;
   }
 
   @media (min-width: 1024px) {
-    padding: 96px 92px 0px 92px;
+    padding: 0px 92px 0px 92px;
   }
 
   @media (min-width: 1440px) {
-    padding: 136px 92px 0px 92px;
+    padding: 0px 92px 0px 92px;
   }
 `;
 
@@ -32,4 +32,49 @@ export const ContainerInfoContact = styled.div`
   @media (min-width: 1440px) {
     max-width: 565px;
   }
+`;
+
+export const ContactText = styled.p`
+  margin: 0px 0px 16px 0px;
+`;
+
+export const ContactTextBold = styled.p`
+  font-weight: 500;
+`;
+
+export const ContainerContactIcons = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0px 0px 40px 0px;
+`;
+
+export const BgItem = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #fcfaff;
+  border-radius: 4px;
+  box-shadow: -4px 4px 12px rgba(229, 215, 254, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    width: 48px;
+    height: 48px;
+  }
+`;
+
+export const ItemImage = styled.img`
+  width: 24px;
+  height: 24px;
+
+  @media (min-width: 1024px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
+
+export const ContainerContactCopyright = styled.div`
+  margin: 0px 0px 20px 0;
 `;
