@@ -6,7 +6,7 @@ import {
   StyledBurger,
   Ul,
   RightNavbarHeaderSubTitle,
-  RightNavbarHeaderTitle,
+  RightNavbarHeaderTitle
 } from "./Navbar.style";
 import { Link } from "react-scroll";
 import { useState } from "react";

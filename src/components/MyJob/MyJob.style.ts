@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ContainerFeacturedProjects = styled.div`
   margin-bottom: 316px;
   position: relative;
-  border: 1px solid purple;
 
   @media (min-width: 768px) {
     margin-bottom: 272px;
@@ -63,21 +62,21 @@ export const ContainerMyJob = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   padding: 100px 0px 0px 0px;
 
   & ${ContainerFeacturedProjects}:nth-child(3) {
-      @media (min-width: 1024px) {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 92px;
-      }
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 92px;
     }
+  }
 
   & ${ContainerFeacturedProjects}:nth-child(3) ${ContainerInfoFeacturedProject} {
-    @media (min-width: 1024px) {
+   @media (min-width: 1024px) {
       left: 0;
-    }
+    } 
   }
 
   @media (min-width: 1440px) {
@@ -86,16 +85,14 @@ export const ContainerMyJob = styled.section`
 `;
 
 export const ContainerInfoMyJob = styled.div`
-  margin-bottom: 36px;
-  padding: 0px 20px;
+  margin: 0px 20px 36px 20px;
 
   @media (min-width: 768px) {
-    padding: 0px 48px;
+    margin: 0px 48px 36px 48px;
   }
 
   @media (min-width: 1024px) {
-    padding: 0px 92px;
-    margin-bottom: 64px;
+    margin: 0px 92px 64px 92px;
   }
 
   @media (min-width: 1280px) {
@@ -165,6 +162,123 @@ export const SecondaryButton = styled.button`
 
   @media (min-width: 768px) {
     font-size: 16px;
+    width: 160px;
   }
 `;
 // INFO PROYECT
+
+// OTHER PROYECTS
+export const ContainerOtherProyects = styled.div`
+  padding: 40px 20px 20px 20px;
+
+  @media (min-width: 768px) {
+    padding: 40px 48px 20px 48px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 60px 96px 40px 96px;
+  }
+`;
+
+export const TitleOtherProyects = styled.h4`
+  font-size: 24px;
+  color: #6838f2;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  font-weight: 600;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #9168f7;
+
+  span {
+    display: block;
+    color: #caaffd;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+`;
+
+export const OtherProyects = styled.div`
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+`;
+
+export const OtherProyect = styled.div`
+  border: 1px solid #9168f7;
+  border-radius: 4px;
+  padding: 20px;
+`;
+
+export const MyJobItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+`;
+export const BgItem = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: #e5d7fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    width: 48px;
+    height: 48px;
+  }
+`;
+
+export const ItemImage = styled.img`
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+`;
+
+export const LinkButton = styled.a`
+  font-size: 14px;
+  color: #6838F2;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #9168f7;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+  }
+
+  &:hover {
+    &:before {
+      transition: transform 0.3s ease;
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+`;
+// OTHER PROYECTS
