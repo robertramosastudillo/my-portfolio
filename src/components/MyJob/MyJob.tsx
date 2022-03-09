@@ -51,7 +51,7 @@ export const MyJob = () => {
   const otherProyects = [
     {
       id: 1,
-      icon: "microsoft.png",
+      icon: "Computer.svg",
       name: "Freelance project 2",
       year: "2021",
       type_project: "Full Stack Developer",
@@ -60,7 +60,7 @@ export const MyJob = () => {
     },
     {
       id: 2,
-      icon: "google.png",
+      icon: "Computer.svg",
       name: "Freelance project 2",
       year: "2021",
       type_project: "Frontend Developer",
@@ -69,7 +69,7 @@ export const MyJob = () => {
     },
     {
       id: 3,
-      icon: "aws.png",
+      icon: "Bussines.svg",
       name: "Freelance project 2",
       year: "2021",
       type_project: "Full Stack Developer",

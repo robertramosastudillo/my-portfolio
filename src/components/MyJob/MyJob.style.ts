@@ -17,7 +17,7 @@ export const ContainerFeacturedProjects = styled.div`
   }
 `;
 
-export const ContainerInfoFeacturedProject: any = styled.div`
+export const ContainerInfoFeacturedProject = styled.div`
   position: absolute;
   top: 80%;
   background-color: #fcfaff;
@@ -31,6 +31,7 @@ export const ContainerInfoFeacturedProject: any = styled.div`
   }
 
   @media (min-width: 1024px) {
+    box-shadow: -5px 5px 10px rgba(202, 175, 253, 0.5);
     padding: 30px;
     width: 504px;
     margin: 0px 92px;
@@ -62,7 +63,6 @@ export const ContainerMyJob = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  /* border: 1px solid purple; */
   padding: 100px 0px 0px 0px;
 
   & ${ContainerFeacturedProjects}:nth-child(3) {
@@ -119,6 +119,7 @@ export const TextPosition = styled.h4`
   font-weight: 500;
   font-size: 20px;
   color: #6838f2;
+  margin-bottom: 8px;
 `;
 
 export const AchievementContainer = styled.ul`
@@ -139,9 +140,6 @@ export const AchievementItem = styled.li`
   &:last-child {
     margin: 0;
   }
-`;
-export const ContainerButtons = styled.div`
-  margin-top: 20px;
 `;
 
 export const SecondaryButton = styled.button`
@@ -212,19 +210,6 @@ export const OtherProyects = styled.div`
   }
 `;
 
-export const OtherProyect = styled.div`
-  border: 1px solid #9168f7;
-  border-radius: 4px;
-  padding: 20px;
-`;
-
-export const MyJobItem = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
-`;
 export const BgItem = styled.div`
   width: 40px;
   height: 40px;
@@ -240,14 +225,22 @@ export const BgItem = styled.div`
   }
 `;
 
-export const ItemImage = styled.img`
-  width: 20px;
-  height: 20px;
+export const OtherProyect = styled.div`
+  border: 1px solid #9168f7;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #FCFAFF;
 
-  @media (min-width: 1024px) {
-    width: 24px;
-    height: 24px;
-  }
+  &:hover {
+    background-color: #E5D7FE;
+      & ${BgItem} {
+        border: 1px solid #6838F2;
+      }
+    }
+`;
+
+export const ContainerButtons = styled.div`
+  margin-top: 20px;
 `;
 
 export const LinkButton = styled.a`
@@ -281,4 +274,23 @@ export const LinkButton = styled.a`
     font-size: 16px;
   }
 `;
+
+export const MyJobItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+`;
+
+export const ItemImage:any = styled.img`
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+`;
+
 // OTHER PROYECTS

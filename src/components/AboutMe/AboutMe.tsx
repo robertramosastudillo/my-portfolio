@@ -75,6 +75,8 @@ export const AboutMe = () => {
     { image: "tiro-al-blanco.svg", text: "Acertado" },
     { image: "cohete.svg", text: "Objetivo" },
     { image: "solidario.svg", text: "Solidario" },
+    { image: "innovador.svg", text: "Innovador" },
+    { image: "introspeccion.svg", text: "Resiliente" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
