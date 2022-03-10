@@ -49,7 +49,7 @@ export const ContainerContactIcons = styled.div`
   margin: 0px 0px 40px 0px;
 `;
 
-export const BgItem = styled.div`
+export const BgItem = styled.a`
   width: 50px;
   height: 50px;
   background-color: #fcfaff;
@@ -58,6 +58,10 @@ export const BgItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color:#E5D7FE;
+  }
 
   @media (min-width: 1024px) {
     width: 48px;

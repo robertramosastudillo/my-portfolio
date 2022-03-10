@@ -17,16 +17,19 @@ export const Contact = () => {
       id: 1,
       title: "Github",
       icon: "github.png",
+      link: "https://github.com/robertramosastudillo"
     },
     {
       id: 2,
       title: "Linkedln",
       icon: "linkedin.png",
+      link: "https://www.linkedin.com/in/robertramosastudillo"
     },
     {
       id: 3,
       title: "Instagram",
       icon: "instagram.png",
+      link: "https://www.instagram.com/robertramosastudillo"
     },
   ];
 
@@ -46,8 +49,8 @@ export const Contact = () => {
           <ContactTextBold>+57 315 853 8138</ContactTextBold>
         </ContainerInfoContact>
         <ContainerContactIcons>
-          {socialMedia.map(({ id, icon, title }) => (
-            <BgItem key={id}>
+          {socialMedia.map(({ id, icon, title, link }) => (
+            <BgItem key={id} href={link} target="_blank">
               <ItemImage src={`social-media/${icon}`} alt={title} />
             </BgItem>
           ))}
