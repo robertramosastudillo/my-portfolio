@@ -119,7 +119,10 @@ export const AboutMe = () => {
             <Cualidad>{selectedText}</Cualidad>
             <ContainerCualidadClose> {"</cualidad>"}</ContainerCualidadClose>
           </ContainerSecondaryHexanText>
-          <BgAboutMeSecondary src="about-me/hexagon-bg-secondary.svg" alt="Sobre mi" />
+          <BgAboutMeSecondary
+            src="about-me/hexagon-bg-secondary.svg"
+            alt="Sobre mi"
+          />
         </ContainerSecondaryHexan>
         <BgAboutMeIcon src={`qualities/${selectedImage}`} alt="Icono" />
       </ContainerBackgroundAboutMe>
@@ -129,16 +132,17 @@ export const AboutMe = () => {
         </SectionTitle>
         <AboutMeTextContainer>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industries standard dummy text
-            ever since the 1500s.
+            Me llamo <b>Robert Andres Ramos,</b> soy de <b>Cali, Colombia</b> y
+            desarrollo productos digitales centrados en el usuario
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industries standard dummy text
-            ever since the 1500s.
+            Inicie en el mundo de la programacion en <b>2019.</b> Enfocado en el
+            constante aprendizaje y emprendimiento.
           </p>
-          <p>Lorem Ipsum is simply dummy text of the printing</p>
+          <p>
+            Soy una persona muy <b>autodidacta,</b> actualmente estoy
+            aprendiendo sobre la Arquitectura de <b>Micro-Frontend.</b>
+          </p>
         </AboutMeTextContainer>
         <AboutMeTecnologiesContainer>
           {stacks.map(({ icon, title }, index) => (

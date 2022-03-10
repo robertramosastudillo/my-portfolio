@@ -14,21 +14,30 @@ export const BannerMain = () => {
   return (
     <ContainerBannerMain id="banner-main">
       <ContainerBackgroundProfile>
-        <BackgroundProfile src="banner-main/profile.svg" alt="Perfil Robert Andres Ramos" />
+        <BackgroundProfile
+          src="banner-main/profile.svg"
+          alt="Perfil Robert Andres Ramos"
+        />
       </ContainerBackgroundProfile>
       <ContainerInfoProfile>
-        <p>Hola, mi nombre es</p>
+        <p>Hola, Mi nombre es</p>
         <TitleBanner>
-          Robert Ramos <span>& im Frontend Developer</span>
+          Robert Ramos <span>& Soy Full Stack Developer</span>
         </TitleBanner>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industries standard dummy text ever
-          since the 1500s.
+        <strong>Desarrollador Full Stack</strong> en tecnologias javascript. Especializado en el
+          stack <b>MERN (MongoDB, ExpressJS, ReactJS Y NodeJS).</b>
         </p>
         <ContainerButtons>
-          <PrimaryButton>Mi perfil en linkedIn</PrimaryButton>
-          <SecondaryButton>Descargar mi CV</SecondaryButton>
+          <PrimaryButton
+            href="https://www.linkedin.com/in/robertramosastudillo"
+            target="_blank"
+          >
+            Mi perfil en linkedIn
+          </PrimaryButton>
+          <SecondaryButton href="/cv-robert-ramos.pdf" download>
+            Descargar mi CV
+          </SecondaryButton>
         </ContainerButtons>
       </ContainerInfoProfile>
     </ContainerBannerMain>

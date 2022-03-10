@@ -32,8 +32,12 @@ const GlobalStyle = createGlobalStyle`
         @media (min-width: 768px) {
             font-size: 16px;
         }
-        
     }
+
+   strong, b {
+        font-weight: 500;
+    }
+    
 `;
 
 export default GlobalStyle;

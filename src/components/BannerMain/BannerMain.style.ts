@@ -91,7 +91,11 @@ export const ContainerButtons = styled.div`
   }
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: #9168f7;
   font-size: 14px;
   color: #fcfaff;
@@ -112,7 +116,11 @@ export const PrimaryButton = styled.button`
   }
 `;
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: #fcfaff;
   font-size: 14px;
   color: #9168f7;
