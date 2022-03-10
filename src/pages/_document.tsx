@@ -1,13 +1,9 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-} from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 import MyApp from "./_app";
 
 export default class MyDocument extends Document {
+  
   static getInitialProps = async (ctx: any) => {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -35,13 +31,22 @@ export default class MyDocument extends Document {
   };
   render() {
     return (
-      <Html>
+      <Html lang="es">
         <Head>
           <meta charSet="utf-8" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https:fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700;900&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
-          <div id="portal" />
           <NextScript />
         </body>
       </Html>
