@@ -133,7 +133,7 @@ export const AboutMe = () => {
         <AboutMeTextContainer>
           <p>
             Me llamo <b>Robert Andres Ramos,</b> soy de <b>Cali, Colombia</b> y
-            desarrollo productos digitales centrados en el usuario
+            desarrollo productos digitales centrados en el usuario.
           </p>
           <p>
             Inicie en el mundo de la programacion en <b>2019.</b> Enfocado en el

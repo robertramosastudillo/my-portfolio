@@ -34,6 +34,7 @@ export const MyJob = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       tecnology_1: "Lorem Ipsum",
       tecnology_2: "Lorem Ipsum",
+      link: "https://github.com/robertramosastudillo?tab=repositories",
     },
     {
       id: 2,
@@ -45,6 +46,7 @@ export const MyJob = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       tecnology_1: "Lorem Ipsum",
       tecnology_2: "Lorem Ipsum",
+      link: "https://github.com/robertramosastudillo?tab=repositories",
     },
   ];
 
@@ -57,6 +59,7 @@ export const MyJob = () => {
       type_project: "Full Stack Developer",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      link: "https://github.com/robertramosastudillo?tab=repositories",
     },
     {
       id: 2,
@@ -66,6 +69,7 @@ export const MyJob = () => {
       type_project: "Frontend Developer",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      link: "https://github.com/robertramosastudillo?tab=repositories",
     },
     {
       id: 3,
@@ -75,6 +79,7 @@ export const MyJob = () => {
       type_project: "Full Stack Developer",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      link: "https://github.com/robertramosastudillo?tab=repositories",
     },
   ];
 
@@ -85,9 +90,10 @@ export const MyJob = () => {
           <span>03.</span>Mi trabajo
         </SectionTitle>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industries standard dummy text ever
-          since the 1500s.
+          A lo largo del tiempo he aprendido una gran cantidad de
+          <b> habilidades técnicas</b> en cada proyecto que he realizado, esto
+          me ha ayudado a mejorar cada vez mas en el desarrollo de productos
+          digitales, <b>estos son algunos de ellos.</b>
         </p>
       </ContainerInfoMyJob>
       {featuredProjects.map(
@@ -100,9 +106,13 @@ export const MyJob = () => {
           description,
           tecnology_1,
           tecnology_2,
+          link,
         }) => (
           <ContainerFeacturedProjects key={id}>
-            <FeacturedProject src={`projects/feactured/${image}`} alt="Proyecto 1" />
+            <FeacturedProject
+              src={`projects/feactured/${image}`}
+              alt="Proyecto 1"
+            />
 
             <ContainerInfoFeacturedProject>
               <TextItem>
@@ -117,7 +127,9 @@ export const MyJob = () => {
               </AchievementContainer>
 
               <ContainerButtons>
-                <SecondaryButton>Link al proyecto</SecondaryButton>
+                <SecondaryButton href={link} target="_blank">
+                  Link al proyecto
+                </SecondaryButton>
               </ContainerButtons>
             </ContainerInfoFeacturedProject>
           </ContainerFeacturedProjects>
@@ -131,7 +143,7 @@ export const MyJob = () => {
 
         <OtherProyects>
           {otherProyects.map(
-            ({ id, name, year, type_project, description, icon }) => (
+            ({ id, name, year, type_project, description, icon, link }) => (
               <OtherProyect key={id}>
                 <MyJobItem>
                   <BgItem>
@@ -148,7 +160,9 @@ export const MyJob = () => {
                 <TextPosition>{type_project}</TextPosition>
                 <TextItem>{description}</TextItem>
                 <ContainerButtons>
-                  <LinkButton>Link al proyecto</LinkButton>
+                  <LinkButton href={link} target="_blank">
+                    Link al proyecto
+                  </LinkButton>
                 </ContainerButtons>
               </OtherProyect>
             )

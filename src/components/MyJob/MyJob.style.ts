@@ -142,7 +142,11 @@ export const AchievementItem = styled.li`
   }
 `;
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: #fcfaff;
   font-size: 14px;
   color: #9168f7;
@@ -250,6 +254,7 @@ export const LinkButton = styled.a`
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 
   &:before {
     content: "";
