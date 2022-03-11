@@ -92,14 +92,14 @@ export const AboutMe = () => {
 
   const selectNewImage = (index: number, carouselContent: any, next = true) => {
     const condition = next
-      ? selectedIndex < carouselContent.length - 1
-      : selectedIndex > 0;
+      ? index < carouselContent.length - 1
+      : index > 0;
     const nextIndex = next
       ? condition
-        ? selectedIndex + 1
+        ? index + 1
         : 0
       : condition
-      ? selectedIndex - 1
+      ? index - 1
       : carouselContent.length - 1;
     setSelectedImage(carouselContent[nextIndex].image);
     setSelectedText(carouselContent[nextIndex].text);

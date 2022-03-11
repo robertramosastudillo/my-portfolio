@@ -24,63 +24,48 @@ export const Experience = () => {
   const companies = [
     {
       id: 1,
-      short_name: "Playtech",
-      full_name: "Playtechnologies S.A.S",
-      start_date: "Febrero 2019",
-      end_date: "Febrero 2020",
-      position: "Frontend Developer",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolorum iste similique beatae dicta non, ducimus quae inventore ab nisi voluptate error quidem voluptatem explicabo repellendus laborum excepturi recusandae aperiamddddd!",
-      achievement_1:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      achievement_2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      logo: "logo-playtech.svg",
-    },
-    {
-      id: 2,
       short_name: "Sophos",
       full_name: "Sophos Solutions S.A.S",
-      start_date: "Febrero 2020",
+      start_date: "Febrero 2021",
       end_date: "Actualmente",
-      position: "Full Stack Developer",
+      position: "Frontend Developer",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolorum iste similique beatae dicta non, ducimus quae inventore ab nisi voluptate error quidem voluptatem explicabo repellendus.",
+        "Desarrollo de interfaces para productos digitales orientado a créditos para Tuya S.A",
       achievement_1:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Desarrollo de Interfaces de usuario responsivas para dispositivos mobiles y desktops",
       achievement_2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Enfocar la estructura del proyecto a mono repositorio e implementandole las diferentes marcas",
       logo: "logo-sophos.svg",
     },
     {
-      id: 3,
-      short_name: "Meditec",
-      full_name: "Meditec S.A.S",
-      start_date: "Febrero 2020",
-      end_date: "Actualmente",
+      id: 2,
+      short_name: "PlayTechnologies",
+      full_name: "Playtechnologies S.A.S",
+      start_date: "Junio 2019",
+      end_date: "Febrero 2021",
       position: "Full Stack Developer",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolorum iste similique beatae dicta non, ducimus quae inventore ab nisi voluptate error quidem voluptato repellendus.",
+        "Desarrollo e integracion de soluciones informaticas a la medida para Syscasoft S.A.S",
       achievement_1:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Creación de Microservicios Implementando Arquitectura Hexagonal Y Multi-Tenancy",
       achievement_2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Desarrollo de las Interfaces de usuario, consumo de datos y envio de peticiones HTTP",
       logo: "logo-playtech.svg",
     },
     {
-      id: 4,
-      short_name: "Medex",
-      full_name: "Medicamentos Especializados S.A.S",
-      start_date: "Febrero 2020",
-      end_date: "Actualmente",
-      position: "Full Stack Developer",
+      id: 3,
+      short_name: "GrupoMediq",
+      full_name: "Meditec S.A.S",
+      start_date: "Abril 2020",
+      end_date: "Junio 2020",
+      position: "Backend Developer",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolorum iste similique beatae dicta non, ducimus quae inventore ab nisi voluptate error quidem voluptatem explicabo repellendus.ddddddddddddddddddd",
+        "Desarrollo de API para el consumo y control de datos de pacientes e historias medicas",
       achievement_1:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Consumo y manejo de datos de APIs de terceros",
       achievement_2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      logo: "logo-playtech.svg",
+        "Alimentar la Base de Datos con la información extraida de archivos de Excel",
+      logo: "logo-grupomediq.png",
     },
   ];
 

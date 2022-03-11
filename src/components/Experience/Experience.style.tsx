@@ -44,6 +44,7 @@ export const Tabs = styled.div`
 export const TabItem = styled.a`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 45px;
   padding: 0px 20px;
