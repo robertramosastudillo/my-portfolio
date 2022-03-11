@@ -203,10 +203,7 @@ export const BgAboutMeIcon = styled.img`
 `;
 
 export const ContainerInfoAboutMe = styled.div`
-  margin: 20px auto;
-
-  @media (min-width: 768px) {
-  }
+  margin: 20px auto 0px auto;
 
   @media (min-width: 1024px) {
     margin: 0px;

@@ -61,8 +61,7 @@ export const Experience = () => {
       position: "Backend Developer",
       description:
         "Desarrollo de API para el consumo y control de datos de pacientes e historias medicas",
-      achievement_1:
-        "Consumo y manejo de datos de APIs de terceros",
+      achievement_1: "Consumo y manejo de datos de APIs de terceros",
       achievement_2:
         "Alimentar la Base de Datos con la información extraida de archivos de Excel",
       logo: "logo-grupomediq.png",
@@ -82,9 +81,9 @@ export const Experience = () => {
           <span>02.</span>Experiencia
         </SectionTitle>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industries standard dummy text ever
-          since the 1500s.
+          Llevo alrededor de <b>4 años</b> como desarrollador de software
+          ofreciendo mis servicios a diferentes tipo de industrias como lo son
+          las <b>Fintechs, Retailers y Salud.</b>
         </p>
       </ContainerInfoExperience>
 
