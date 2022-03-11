@@ -38,6 +38,35 @@ export const ContactText = styled.p`
   margin: 0px 0px 16px 0px;
 `;
 
+export const ContactTextSend = styled.a`
+  display: inline-block;
+  color: #6838f2;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #9168f7;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+  }
+
+  &:hover {
+    &:before {
+      transition: transform 0.3s ease;
+      transform: scale(1);
+    }
+  }
+`;
+
 export const ContactTextBold = styled.p`
   font-weight: 500;
 `;
@@ -60,7 +89,7 @@ export const BgItem = styled.a`
   justify-content: center;
 
   &:hover {
-    background-color:#E5D7FE;
+    background-color: #e5d7fe;
   }
 
   @media (min-width: 1024px) {

@@ -9,6 +9,7 @@ import {
   BgItem,
   ItemImage,
   ContainerContactCopyright,
+  ContactTextSend,
 } from "./Contact.style";
 
 export const Contact = () => {
@@ -17,19 +18,19 @@ export const Contact = () => {
       id: 1,
       title: "Github",
       icon: "github.png",
-      link: "https://github.com/robertramosastudillo"
+      link: "https://github.com/robertramosastudillo",
     },
     {
       id: 2,
       title: "Linkedln",
       icon: "linkedin.png",
-      link: "https://www.linkedin.com/in/robertramosastudillo"
+      link: "https://www.linkedin.com/in/robertramosastudillo",
     },
     {
       id: 3,
       title: "Instagram",
       icon: "instagram.png",
-      link: "https://www.instagram.com/robertramosastudillo"
+      link: "https://www.instagram.com/robertramosastudillo",
     },
   ];
 
@@ -41,12 +42,23 @@ export const Contact = () => {
             <span>04.</span>Contácto
           </SectionTitle>
           <ContactText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Si deseas comunicarte conmigo o te interesa comenzar un proyecto
+            juntos, pónte en contacto.
           </ContactText>
 
-          <ContactTextBold>Robertramos@gmail.com</ContactTextBold>
-          <ContactTextBold>+57 315 853 8138</ContactTextBold>
+          <ContactTextSend href="mailto:robertramosastudillo@gmail.com">
+            Envíame un correo.
+          </ContactTextSend>
+          <ContactText>Robertramosastudillo@gmail.com</ContactText>
+
+          <ContactTextSend
+            href="https://api.whatsapp.com/send?phone=573176488465&amp;text=Hola como estas? estoy interesad@ en comenzar un proyecto contigo"
+            target="_blank"
+          >
+            Escribeme al Whatsapp
+          </ContactTextSend>
+          <ContactText>+57 317 648 8465</ContactText>
+          <p>O envíame un mensaje directo en mis redes sociales.</p>
         </ContainerInfoContact>
         <ContainerContactIcons>
           {socialMedia.map(({ id, icon, title, link }) => (

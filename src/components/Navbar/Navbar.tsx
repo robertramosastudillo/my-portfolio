@@ -34,7 +34,7 @@ export const Navbar = () => {
           >
             <RightNavbarHeaderTitle>Robert Ramos</RightNavbarHeaderTitle>
             <RightNavbarHeaderSubTitle>
-              Frontend Developer
+              Full Stack Developer
             </RightNavbarHeaderSubTitle>
           </Link>
         </RightNavbarHeader>
