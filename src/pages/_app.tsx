@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router]);
+  }, []);
 
   return (
     <Layout>
