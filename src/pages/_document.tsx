@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <meta charSet="utf-8" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
