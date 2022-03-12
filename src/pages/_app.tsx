@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router]);
-  
+
   return (
     <Layout>
       <Seo />
