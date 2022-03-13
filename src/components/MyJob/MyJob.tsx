@@ -112,6 +112,8 @@ export const MyJob = () => {
             <FeacturedProject
               src={`projects/feactured/${image}`}
               alt="Proyecto 1"
+              width="708"
+              height="340"
             />
 
             <ContainerInfoFeacturedProject>
