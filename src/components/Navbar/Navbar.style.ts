@@ -109,6 +109,10 @@ export const Ul: any = styled.ul`
   }
 `;
 
+export const NavLinkLogo: any = styled(Link)`
+  text-decoration: none;
+`;
+
 export const NavLink: any = styled(Link)`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -116,6 +120,7 @@ export const NavLink: any = styled(Link)`
   margin: 0px 10px;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 
   &:before {
     content: "";

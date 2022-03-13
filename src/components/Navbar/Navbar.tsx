@@ -7,6 +7,7 @@ import {
   Ul,
   RightNavbarHeaderSubTitle,
   RightNavbarHeaderTitle,
+  NavLinkLogo,
 } from "./Navbar.style";
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -25,7 +26,7 @@ export const Navbar = () => {
       </StyledBurger>
       <Ul open={open}>
         <RightNavbarHeader>
-          <Link
+          <NavLinkLogo
             to="banner-main"
             spy={true}
             smooth={true}
@@ -37,7 +38,7 @@ export const Navbar = () => {
             <RightNavbarHeaderSubTitle>
               Full Stack Developer
             </RightNavbarHeaderSubTitle>
-          </Link>
+          </NavLinkLogo>
         </RightNavbarHeader>
         {/* <NavLink> */}
         <NavLink
@@ -47,6 +48,7 @@ export const Navbar = () => {
           duration={800}
           onClick={() => setOpen(!open)}
           activeClass="active"
+          href="/"
         >
           01. Sobre mí
         </NavLink>
@@ -59,6 +61,7 @@ export const Navbar = () => {
           duration={800}
           onClick={() => setOpen(!open)}
           activeClass="active"
+          href="/"
         >
           02. Experiencia
         </NavLink>
@@ -71,6 +74,7 @@ export const Navbar = () => {
           duration={800}
           onClick={() => setOpen(!open)}
           activeClass="active"
+          href="/"
         >
           03. Mi trabajo
         </NavLink>
@@ -83,6 +87,7 @@ export const Navbar = () => {
           duration={800}
           onClick={() => setOpen(!open)}
           activeClass="active"
+          href="/"
         >
           04. Contacto
         </NavLink>
