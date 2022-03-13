@@ -41,7 +41,7 @@ export const Tabs = styled.div`
   }
 `;
 
-export const TabItem = styled.a`
+export const TabItem = styled.span`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

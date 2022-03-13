@@ -109,6 +109,7 @@ export const Experience = () => {
             achievement_1,
             achievement_2,
             logo,
+            full_name,
           }) => (
             <TabContentItem
               key={id}
@@ -130,7 +131,7 @@ export const Experience = () => {
               <Line></Line>
 
               <ContainerLogo>
-                <LogoImage src={`companies/${logo}`} />
+                <LogoImage src={`companies/${logo}`} alt={full_name} />
               </ContainerLogo>
             </TabContentItem>
           )
