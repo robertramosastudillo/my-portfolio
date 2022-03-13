@@ -1,7 +1,6 @@
 import React from "react";
 import { SectionContainer, SectionTitle } from "../../styles/CommonComponents";
 import {
-  ContactTextBold,
   ContainerContact,
   ContainerInfoContact,
   ContactText,
@@ -17,20 +16,20 @@ export const Contact = () => {
     {
       id: 1,
       title: "Github",
-      icon: "github.png",
-      link: "https://github.com/robertramosastudillo",
+      image: "github.png",
+      url: "https://github.com/robertramosastudillo",
     },
     {
       id: 2,
       title: "Linkedln",
-      icon: "linkedin.png",
-      link: "https://www.linkedin.com/in/robertramosastudillo",
+      image: "linkedin.png",
+      url: "https://www.linkedin.com/in/robertramosastudillo",
     },
     {
       id: 3,
       title: "Instagram",
-      icon: "instagram.png",
-      link: "https://www.instagram.com/robertramosastudillo",
+      image: "instagram.png",
+      url: "https://www.instagram.com/robertramosastudillo",
     },
   ];
 
@@ -61,9 +60,9 @@ export const Contact = () => {
           <p>O envíame un mensaje directo en mis redes sociales.</p>
         </ContainerInfoContact>
         <ContainerContactIcons>
-          {socialMedia.map(({ id, icon, title, link }) => (
-            <BgItem key={id} href={link} target="_blank">
-              <ItemImage src={`social-media/${icon}`} alt={title} />
+          {socialMedia.map(({ id, image, title, url }) => (
+            <BgItem key={id} href={url} target="_blank">
+              <ItemImage src={`social-media/${image}`} alt={title} />
             </BgItem>
           ))}
         </ContainerContactIcons>

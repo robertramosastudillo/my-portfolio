@@ -72,7 +72,7 @@ export const AboutMe = () => {
   ];
 
   const carouselContent = [
-    { image: "acertivo.svg", text: "Acertivo" },
+    { image: "asertivo.svg", text: "Asertivo" },
     { image: "objetivo.svg", text: "Objetivo" },
     { image: "solidario.svg", text: "Solidario" },
     { image: "innovador.svg", text: "Innovador" },
