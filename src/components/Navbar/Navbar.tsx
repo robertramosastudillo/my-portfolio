@@ -6,7 +6,7 @@ import {
   StyledBurger,
   Ul,
   RightNavbarHeaderSubTitle,
-  RightNavbarHeaderTitle
+  RightNavbarHeaderTitle,
 } from "./Navbar.style";
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <NavbarStyle>
-      <Link to="banner-main" spy={true} smooth={true} duration={800}>
+      <Link to="banner-main" spy={true} smooth={true} duration={800} href="">
         <Logo src="navbar/logo.svg" alt="Robert Ramos" />
       </Link>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -31,6 +31,7 @@ export const Navbar = () => {
             smooth={true}
             duration={800}
             onClick={() => setOpen(!open)}
+            href=""
           >
             <RightNavbarHeaderTitle>Robert Ramos</RightNavbarHeaderTitle>
             <RightNavbarHeaderSubTitle>
