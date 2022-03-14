@@ -11,7 +11,6 @@ import {
 } from "./BannerMain.style";
 
 export const BannerMain = () => {
-  const width = "100%";
   return (
     <ContainerBannerMain id="banner-main">
       <ContainerBackgroundProfile>

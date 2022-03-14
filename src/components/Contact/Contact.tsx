@@ -1,4 +1,6 @@
 import React from "react";
+import socialMedia from "../../mocks/socialMedia.json";
+
 import { SectionContainer, SectionTitle } from "../../styles/CommonComponents";
 import {
   ContainerContact,
@@ -12,27 +14,6 @@ import {
 } from "./Contact.style";
 
 export const Contact = () => {
-  const socialMedia = [
-    {
-      id: 1,
-      title: "Github",
-      image: "github.png",
-      url: "https://github.com/robertramosastudillo",
-    },
-    {
-      id: 2,
-      title: "Linkedln",
-      image: "linkedin.png",
-      url: "https://www.linkedin.com/in/robertramosastudillo",
-    },
-    {
-      id: 3,
-      title: "Instagram",
-      image: "instagram.png",
-      url: "https://www.instagram.com/robertramosastudillo",
-    },
-  ];
-
   return (
     <SectionContainer>
       <ContainerContact id="contact">

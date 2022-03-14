@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Interface } from "readline";
+
+import carousel from "../../mocks/carouselContent.json";
+import tecnologies from "../../mocks/tecnologies.json";
+
 import { SectionTitle } from "../../styles/CommonComponents";
 import {
   AboutMeItem,
@@ -20,96 +23,38 @@ import {
   ItemImage,
 } from "./AboutMe.style";
 
-export interface CarouselContentProps {
-  text: string,
-  image: string
+interface CarouselProps {
+  text: string;
+  image: string;
 }
 
 export const AboutMe = () => {
-
-  const stacks = [
-    {
-      icon: "html.svg",
-      title: "HTML",
-    },
-    {
-      icon: "css.svg",
-      title: "CSS",
-    },
-    {
-      icon: "js.svg",
-      title: "Javascript",
-    },
-    {
-      icon: "react.svg",
-      title: "ReactJS",
-    },
-    {
-      icon: "redux.svg",
-      title: "Redux",
-    },
-    {
-      icon: "nextjs.svg",
-      title: "NextJS",
-    },
-    {
-      icon: "sass.svg",
-      title: "Sass",
-    },
-    {
-      icon: "styled-components.svg",
-      title: "Styled Components",
-    },
-    {
-      icon: "ts.svg",
-      title: "Typescript",
-    },
-    {
-      icon: "nodejs.svg",
-      title: "NodeJS",
-    },
-    {
-      icon: "mongodb.svg",
-      title: "MongoDB",
-    },
-    {
-      icon: "expressjs.svg",
-      title: "ExpressJS",
-    },
-  ];
-
-  const carouselContent = [
-    { image: "asertivo.svg", text: "Asertivo" },
-    { image: "objetivo.svg", text: "Objetivo" },
-    { image: "solidario.svg", text: "Solidario" },
-    { image: "innovador.svg", text: "Innovador" },
-    { image: "resiliente.svg", text: "Resiliente" },
-  ];
-
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(carouselContent[0].image);
-  const [selectedText, setSelectedText] = useState(carouselContent[0].text);
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [selectedImage, setSelectedImage] = useState<string>(carousel[0].image);
+  const [selectedText, setSelectedText] = useState<string>(carousel[0].text);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      selectNewImage(selectedIndex, carouselContent);
+      selectNewImage(selectedIndex, carousel);
     }, 4000);
     return () => clearInterval(interval);
   });
 
-  const selectNewImage = (index: number, carouselContent: CarouselContentProps[], next = true) => {
-    const condition = next
-      ? index < carouselContent.length - 1
-      : index > 0;
+  const selectNewImage = (
+    index: number,
+    carousel: CarouselProps[],
+    next: boolean = true
+  ) => {
+    const condition = next ? index < carousel.length - 1 : index > 0;
     const nextIndex = next
       ? condition
         ? index + 1
         : 0
       : condition
       ? index - 1
-      : carouselContent.length - 1;
-    setSelectedImage(carouselContent[nextIndex].image);
-    setSelectedText(carouselContent[nextIndex].text);
+      : carousel.length - 1;
+    setSelectedImage(carousel[nextIndex].image);
+    setSelectedText(carousel[nextIndex].text);
     setSelectedIndex(nextIndex);
   };
 
@@ -152,7 +97,7 @@ export const AboutMe = () => {
           </p>
         </AboutMeTextContainer>
         <AboutMeTecnologiesContainer>
-          {stacks.map(({ icon, title }, index) => (
+          {tecnologies.map(({ icon, title }, index) => (
             <AboutMeItem key={index}>
               <BgItem>
                 <ItemImage src={`tecnologies/${icon}`} alt={title} />

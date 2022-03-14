@@ -108,7 +108,6 @@ export const ContainerInfoMyJob = styled.div`
   }
 `;
 
-// INFO PROYECT
 export const TextItem = styled.p`
   color: #6838f2;
   font-weight: 300;
@@ -133,9 +132,7 @@ export const AchievementContainer = styled.ul`
   gap: 16px;
   margin: 12px 0px 0px 0px;
 `;
-// INFO PROYECT
 
-// OTHER PROYECTS
 export const ContainerOtherProyects = styled.div`
   padding: 40px 20px 20px 20px;
 
@@ -267,5 +264,3 @@ export const ItemImage = styled.img`
     height: 24px;
   }
 `;
-
-// OTHER PROYECTS

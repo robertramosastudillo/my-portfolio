@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "html.svg",
+    "title": "HTML"
+  },
+  {
+    "icon": "css.svg",
+    "title": "CSS"
+  },
+  {
+    "icon": "js.svg",
+    "title": "Javascript"
+  },
+  {
+    "icon": "react.svg",
+    "title": "ReactJS"
+  },
+  {
+    "icon": "redux.svg",
+    "title": "Redux"
+  },
+  {
+    "icon": "nextjs.svg",
+    "title": "NextJS"
+  },
+  {
+    "icon": "sass.svg",
+    "title": "Sass"
+  },
+  {
+    "icon": "styled-components.svg",
+    "title": "Styled Components"
+  },
+  {
+    "icon": "ts.svg",
+    "title": "Typescript"
+  },
+  {
+    "icon": "nodejs.svg",
+    "title": "NodeJS"
+  },
+  {
+    "icon": "mongodb.svg",
+    "title": "MongoDB"
+  },
+  {
+    "icon": "expressjs.svg",
+    "title": "ExpressJS"
+  }
+]

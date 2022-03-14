@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Link } from "react-scroll";
+
 import {
   Logo,
   NavbarStyle,
@@ -9,8 +12,6 @@ import {
   RightNavbarHeaderTitle,
   NavLinkLogo,
 } from "./Navbar.style";
-import { Link } from "react-scroll";
-import { useState } from "react";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
