@@ -72,7 +72,7 @@ export const TabContent = styled.div`
     border-radius: 4px 6px 6px 4px;
   }
 `;
-export const TabTextPosition = styled.h4`
+export const TabTextPosition = styled.h2`
   font-weight: 400;
   font-size: 20px;
 
