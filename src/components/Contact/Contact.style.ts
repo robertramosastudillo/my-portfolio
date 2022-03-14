@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from 'next/image'
 
 export const ContainerContact = styled.section`
   display: flex;
@@ -97,7 +98,7 @@ export const BgItem = styled.a`
   }
 `;
 
-export const ItemImage = styled.img`
+export const ItemImage = styled(Image)`
   width: 24px;
   height: 24px;
 

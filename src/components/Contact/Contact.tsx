@@ -16,19 +16,19 @@ export const Contact = () => {
     {
       id: 1,
       title: "Github",
-      image: "github.png",
+      image: "https://res.cloudinary.com/dzosyypdq/image/upload/v1647221755/socialMedia/github_ec0ufv.png",
       url: "https://github.com/robertramosastudillo",
     },
     {
       id: 2,
       title: "Linkedln",
-      image: "linkedin.png",
+      image: "https://res.cloudinary.com/dzosyypdq/image/upload/v1647221755/socialMedia/linkedin_yhr1u9.png",
       url: "https://www.linkedin.com/in/robertramosastudillo",
     },
     {
       id: 3,
       title: "Instagram",
-      image: "instagram.png",
+      image: "https://res.cloudinary.com/dzosyypdq/image/upload/v1647221755/socialMedia/instagram_rgcjqi.png",
       url: "https://www.instagram.com/robertramosastudillo",
     },
   ];
@@ -63,10 +63,11 @@ export const Contact = () => {
           {socialMedia.map(({ id, image, title, url }) => (
             <BgItem key={id} href={url} target="_blank">
               <ItemImage
-                src={`social-media/${image}`}
+                // src={`social-media/${image}`}
+                src={image}
                 alt={title}
-                width="24"
-                height="24"
+                width={24}
+                height={24}
               />
             </BgItem>
           ))}
