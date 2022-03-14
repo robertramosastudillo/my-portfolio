@@ -4,7 +4,7 @@ export const SectionContainer = styled.div`
   padding: 80px 20px 0px 20px;
 `
 
-export const SectionTitle = styled.h4`
+export const SectionTitle = styled.h2`
   color: #6838f2;
   font-weight: 600;
   font-size: 24px;
