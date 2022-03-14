@@ -91,9 +91,7 @@ export const AboutMe = () => {
   });
 
   const selectNewImage = (index: number, carouselContent: any, next = true) => {
-    const condition = next
-      ? index < carouselContent.length - 1
-      : index > 0;
+    const condition = next ? index < carouselContent.length - 1 : index > 0;
     const nextIndex = next
       ? condition
         ? index + 1
@@ -124,7 +122,10 @@ export const AboutMe = () => {
             alt="Sobre mi"
           />
         </ContainerSecondaryHexan>
-        <BgAboutMeIcon src={`qualities/${selectedImage}`} alt="Icono" />
+        <BgAboutMeIcon
+          src={require(`qualities/${selectedImage}`).default}
+          alt="Icono"
+        />
       </ContainerBackgroundAboutMe>
       <ContainerInfoAboutMe>
         <SectionTitle>
