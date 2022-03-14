@@ -66,8 +66,8 @@ export const Contact = () => {
                 // src={`social-media/${image}`}
                 src={image}
                 alt={title}
-                width={24}
-                height={24}
+                width="24"
+                height="24"
               />
             </BgItem>
           ))}
