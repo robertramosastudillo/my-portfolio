@@ -1,25 +1,28 @@
 import styled from "styled-components";
 
 export const ContainerFeacturedProjects = styled.div`
-  margin-bottom: 316px;
+  margin-bottom: 336px;
   position: relative;
 
+  &:nth-child(3) {
+      margin-top: 40px;
+    }
+
   @media (min-width: 768px) {
+    &:nth-child(3) {
+      margin-top: 0px;
+    }
     margin-bottom: 272px;
   }
 
   @media (min-width: 1024px) {
     margin-bottom: 124px;
-
-    &:nth-child(3) {
-      margin-bottom: 0;
-    }
   }
 `;
 
 export const ContainerInfoFeacturedProject = styled.div`
   position: absolute;
-  top: 80%;
+  top: 64%;
   background-color: #fcfaff;
   box-shadow: 0px 0px 10px rgba(229, 215, 254, 0.5);
   margin: 0px 20px;
@@ -27,6 +30,7 @@ export const ContainerInfoFeacturedProject = styled.div`
   border-radius: 4px;
 
   @media (min-width: 768px) {
+    top: 80%;
     margin: 0px 48px;
   }
 
@@ -74,9 +78,9 @@ export const ContainerMyJob = styled.section`
   }
 
   & ${ContainerFeacturedProjects}:nth-child(3) ${ContainerInfoFeacturedProject} {
-   @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
       left: 0;
-    } 
+    }
   }
 
   @media (min-width: 1440px) {
@@ -125,22 +129,11 @@ export const TextPosition = styled.h2`
 export const AchievementContainer = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
   margin: 12px 0px 0px 0px;
 `;
-export const AchievementItem = styled.li`
-  font-size: 14px;
-  margin: 0px 20px;
-  color: #6838f2;
 
-  @media (min-width: 1024px) {
-    margin: 0px 40px 0px 20px;
-  }
-
-  &:last-child {
-    margin: 0;
-  }
-`;
 
 export const SecondaryButton = styled.a`
   display: flex;
@@ -233,14 +226,14 @@ export const OtherProyect = styled.div`
   border: 1px solid #9168f7;
   border-radius: 4px;
   padding: 20px;
-  background-color: #FCFAFF;
+  background-color: #fcfaff;
 
   &:hover {
-    background-color: #E5D7FE;
-      & ${BgItem} {
-        border: 1px solid #6838F2;
-      }
+    background-color: #e5d7fe;
+    & ${BgItem} {
+      border: 1px solid #6838f2;
     }
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -249,7 +242,7 @@ export const ContainerButtons = styled.div`
 
 export const LinkButton = styled.a`
   font-size: 14px;
-  color: #6838F2;
+  color: #6838f2;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
@@ -288,7 +281,7 @@ export const MyJobItem = styled.div`
   margin-bottom: 16px;
 `;
 
-export const ItemImage:any = styled.img`
+export const ItemImage: any = styled.img`
   width: 20px;
   height: 20px;
 

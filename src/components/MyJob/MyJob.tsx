@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionTitle } from "../../styles/CommonComponents";
+import { AboutMeItem } from "../AboutMe/AboutMe.style";
 import {
   ContainerInfoMyJob,
   ContainerMyJob,
@@ -9,7 +10,6 @@ import {
   TextPosition,
   TextItem,
   AchievementContainer,
-  AchievementItem,
   ContainerButtons,
   SecondaryButton,
   TitleOtherProyects,
@@ -28,24 +28,39 @@ export const MyJob = () => {
       id: 1,
       image: "feactured-project-1.svg",
       name: "Freelance project",
-      year: "2021",
+      year: "2022",
       type_project: "Frontend Developer",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      tecnology_1: "Lorem Ipsum",
-      tecnology_2: "Lorem Ipsum",
+        "Uno de mis proyectos destacados es esta misma página web la cual es mi portafolio de trabajo en donde les expongo los diferentes proyectos que he realizado desde que inicie en el mundo del desarrollo.",
+        tecnologies: [
+          { techId: 1, tech_title: "NextJS", tech_image: "nextjs.svg" },
+          { techId: 2, tech_title: "Typescript", tech_image: "ts.svg" },
+          {
+            techId: 3,
+            tech_title: "Styled Components",
+            tech_image: "styled-components.svg",
+          },
+        ],
+
       link: "https://github.com/robertramosastudillo?tab=repositories",
     },
     {
       id: 2,
-      image: "feactured-project-1.svg",
+      image: "feactured-project-3.svg",
       name: "Freelance project 2",
       year: "2021",
       type_project: "Full Stack Developer",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      tecnology_1: "Lorem Ipsum",
-      tecnology_2: "Lorem Ipsum",
+      tecnologies: [
+        { techId: 1, tech_title: "ReactJS", tech_image: "react.svg" },
+        { techId: 2, tech_title: "Typescript", tech_image: "ts.svg" },
+        {
+          techId: 3,
+          tech_title: "Styled Components",
+          tech_image: "styled-components.svg",
+        },
+      ],
       link: "https://github.com/robertramosastudillo?tab=repositories",
     },
   ];
@@ -104,16 +119,15 @@ export const MyJob = () => {
           year,
           type_project,
           description,
-          tecnology_1,
-          tecnology_2,
+          tecnologies,
           link,
         }) => (
           <ContainerFeacturedProjects key={id}>
             <FeacturedProject
               src={`projects/feactured/${image}`}
               alt="Proyecto 1"
-              width="708"
-              height="340"
+              width="auto"
+              height="auto"
             />
 
             <ContainerInfoFeacturedProject>
@@ -124,8 +138,17 @@ export const MyJob = () => {
               <TextItem>{description}</TextItem>
 
               <AchievementContainer>
-                <AchievementItem>{tecnology_1}</AchievementItem>
-                <AchievementItem>{tecnology_2}</AchievementItem>
+                {tecnologies?.map(({ techId, tech_title, tech_image }) => (
+                  <AboutMeItem key={techId}>
+                    <BgItem>
+                      <ItemImage
+                        src={`tecnologies/${tech_image}`}
+                        alt={tech_title}
+                      />
+                    </BgItem>
+                    <p>{tech_title}</p>
+                  </AboutMeItem>
+                ))}
               </AchievementContainer>
 
               <ContainerButtons>
