@@ -115,7 +115,7 @@ export const TextItem = styled.p`
   }
 `;
 
-export const TextPosition = styled.h4`
+export const TextPosition = styled.h2`
   font-weight: 500;
   font-size: 20px;
   color: #6838f2;
@@ -182,7 +182,7 @@ export const ContainerOtherProyects = styled.div`
   }
 `;
 
-export const TitleOtherProyects = styled.h2`
+export const TitleOtherProyects = styled.h4`
   font-size: 24px;
   color: #6838f2;
   font-family: "Poppins", sans-serif;
