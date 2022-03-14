@@ -70,7 +70,7 @@ export const Experience = () => {
 
   const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index: any) => {
+  const toggleTab = (index: number) => {
     setToggleState(index);
   };
 

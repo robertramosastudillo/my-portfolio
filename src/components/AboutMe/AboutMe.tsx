@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Interface } from "readline";
 import { SectionTitle } from "../../styles/CommonComponents";
 import {
   AboutMeItem,
@@ -19,7 +20,13 @@ import {
   ItemImage,
 } from "./AboutMe.style";
 
+export interface CarouselContentProps {
+  text: string,
+  image: string
+}
+
 export const AboutMe = () => {
+
   const stacks = [
     {
       icon: "html.svg",
@@ -90,7 +97,7 @@ export const AboutMe = () => {
     return () => clearInterval(interval);
   });
 
-  const selectNewImage = (index: number, carouselContent: any, next = true) => {
+  const selectNewImage = (index: number, carouselContent: CarouselContentProps[], next = true) => {
     const condition = next
       ? index < carouselContent.length - 1
       : index > 0;

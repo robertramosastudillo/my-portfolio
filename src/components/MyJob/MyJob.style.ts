@@ -133,33 +133,6 @@ export const AchievementContainer = styled.ul`
   gap: 16px;
   margin: 12px 0px 0px 0px;
 `;
-
-
-export const SecondaryButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: #fcfaff;
-  font-size: 14px;
-  color: #9168f7;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  height: 45px;
-  width: 143px;
-  border: 1px solid #9168f7;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e5d7fe;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    width: 160px;
-  }
-`;
 // INFO PROYECT
 
 // OTHER PROYECTS
@@ -278,10 +251,14 @@ export const MyJobItem = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
+ 
 `;
 
-export const ItemImage: any = styled.img`
+export const MyJobContentTextItem = styled.div`
+ margin-top: 16px;
+`;
+
+export const ItemImage = styled.img`
   width: 20px;
   height: 20px;
 

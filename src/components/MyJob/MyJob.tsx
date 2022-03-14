@@ -1,6 +1,7 @@
 import React from "react";
-import { SectionTitle } from "../../styles/CommonComponents";
-import { AboutMeItem } from "../AboutMe/AboutMe.style";
+import { SecondaryButton, SectionTitle } from "../../styles/CommonComponents";
+import { MyJobContentTextItem } from './MyJob.style';
+
 import {
   ContainerInfoMyJob,
   ContainerMyJob,
@@ -11,7 +12,7 @@ import {
   TextItem,
   AchievementContainer,
   ContainerButtons,
-  SecondaryButton,
+  // SecondaryButton,
   TitleOtherProyects,
   ContainerOtherProyects,
   OtherProyects,
@@ -31,18 +32,18 @@ export const MyJob = () => {
       year: "2022",
       type_project: "Frontend Developer",
       description:
-        "Uno de mis proyectos destacados es esta misma página web la cual es mi portafolio de trabajo en donde les expongo los diferentes proyectos que he realizado desde que inicie en el mundo del desarrollo.",
-        tecnologies: [
-          { techId: 1, tech_title: "NextJS", tech_image: "nextjs.svg" },
-          { techId: 2, tech_title: "Typescript", tech_image: "ts.svg" },
-          {
-            techId: 3,
-            tech_title: "Styled Components",
-            tech_image: "styled-components.svg",
-          },
-        ],
+        "Uno de mis proyectos destacados es esta página web la cual es mi portafolio de trabajo en donde les expongo los diferentes proyectos que he realizado desde que inicie en el mundo del desarrollo.",
+      tecnologies: [
+        { techId: 1, tech_title: "NextJS", tech_image: "nextjs.svg" },
+        { techId: 2, tech_title: "Typescript", tech_image: "ts.svg" },
+        {
+          techId: 3,
+          tech_title: "Styled Components",
+          tech_image: "styled-components.svg",
+        },
+      ],
 
-      link: "https://github.com/robertramosastudillo?tab=repositories",
+      link: "https://robertramosastudillo.com",
     },
     {
       id: 2,
@@ -139,7 +140,7 @@ export const MyJob = () => {
 
               <AchievementContainer>
                 {tecnologies?.map(({ techId, tech_title, tech_image }) => (
-                  <AboutMeItem key={techId}>
+                  <MyJobItem key={techId}>
                     <BgItem>
                       <ItemImage
                         src={`tecnologies/${tech_image}`}
@@ -147,12 +148,12 @@ export const MyJob = () => {
                       />
                     </BgItem>
                     <p>{tech_title}</p>
-                  </AboutMeItem>
+                  </MyJobItem>
                 ))}
               </AchievementContainer>
 
               <ContainerButtons>
-                <SecondaryButton href={link} target="_blank">
+                <SecondaryButton mobileWidth="143px" tabletWidth="160px" href={link} target="_blank">
                   Link al proyecto
                 </SecondaryButton>
               </ContainerButtons>
@@ -179,11 +180,13 @@ export const MyJob = () => {
                   </BgItem>
                 </MyJobItem>
 
-                <TextItem>
-                  {name} - {year}
-                </TextItem>
-                <TextPosition>{type_project}</TextPosition>
-                <TextItem>{description}</TextItem>
+                <MyJobContentTextItem>
+                  <TextItem>
+                    {name} - {year}
+                  </TextItem>
+                  <TextPosition>{type_project}</TextPosition>
+                  <TextItem>{description}</TextItem>
+                </MyJobContentTextItem>
                 <ContainerButtons>
                   <LinkButton href={link} target="_blank">
                     Link al proyecto

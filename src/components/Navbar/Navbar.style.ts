@@ -1,5 +1,6 @@
+import styled, { StyledComponent } from "styled-components";
+import { MouseEventHandler } from "react";
 import { Link } from "react-scroll";
-import styled from "styled-components";
 
 export const NavbarStyle = styled.div`
   width: 100%;
@@ -35,8 +36,14 @@ export const Logo = styled.img`
   }
 `;
 
+export interface StyledBurgerProps {
+  open: boolean;
+  onClick?: MouseEventHandler<HTMLDivElement> | undefined;
+}
+
+
 // BURGER MENU
-export const StyledBurger: any = styled.div`
+export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never> = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -55,24 +62,24 @@ export const StyledBurger: any = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }: any) => (open ? "#fff" : "#6838F2")};
+    background-color: ${({ open }: StyledBurgerProps) => (open ? "#fff" : "#6838F2")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }: any) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }: StyledBurgerProps) => (open ? "rotate(45deg)" : "rotate(0)")};
       top: 0;
     }
 
     &:nth-child(2) {
-      transform: ${({ open }: any) =>
+      transform: ${({ open }: StyledBurgerProps) =>
         open ? "translateX(100%)" : "translateX(0)"};
-      opacity: ${({ open }: any) => (open ? 0 : 1)};
+      opacity: ${({ open }: StyledBurgerProps) => (open ? 0 : 1)};
     }
 
     &:nth-child(3) {
-      transform: ${({ open }: any) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }: StyledBurgerProps) => (open ? "rotate(-45deg)" : "rotate(0)")};
       bottom: 0;
     }
   }
@@ -81,7 +88,7 @@ export const StyledBurger: any = styled.div`
 
 // RIGHT NAVBAR
 
-export const Ul: any = styled.span`
+export const Ul: StyledComponent<"span", any, StyledBurgerProps, never> = styled.span`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -91,7 +98,7 @@ export const Ul: any = styled.span`
     flex-flow: column nowrap;
     background-color: #6838f2;
     position: fixed;
-    transform: ${({ open }: any) =>
+    transform: ${({ open }: StyledBurgerProps) =>
       open ? "translateX(0)" : "translateX(100%)"};
     top: 0;
     right: 0;
@@ -109,11 +116,11 @@ export const Ul: any = styled.span`
   }
 `;
 
-export const NavLinkLogo: any = styled(Link)`
+export const NavLinkLogo = styled(Link)`
   text-decoration: none;
 `;
 
-export const NavLink: any = styled(Link)`
+export const NavLink = styled(Link)`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -173,7 +180,7 @@ export const NavLink: any = styled(Link)`
   }
 `;
 
-export const RightNavbarHeader: any = styled.div`
+export const RightNavbarHeader = styled.div`
   display: none;
 
   @media (max-width: 768px) {
@@ -185,14 +192,14 @@ export const RightNavbarHeader: any = styled.div`
   }
 `;
 
-export const RightNavbarHeaderTitle: any = styled.h4`
+export const RightNavbarHeaderTitle = styled.h4`
   @media (max-width: 768px) {
     color: #ffffff;
     font-weight: 500;
   }
 `;
 
-export const RightNavbarHeaderSubTitle: any = styled.p`
+export const RightNavbarHeaderSubTitle = styled.p`
   @media (max-width: 768px) {
     color: #caaffd;
     font-weight: 400;

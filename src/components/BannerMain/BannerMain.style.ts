@@ -115,28 +115,3 @@ export const PrimaryButton = styled.a`
     font-size: 16px;
   }
 `;
-
-export const SecondaryButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: #fcfaff;
-  font-size: 14px;
-  color: #9168f7;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  height: 45px;
-  width: 100%;
-  border: 1px solid #9168f7;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e5d7fe;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-  }
-`;

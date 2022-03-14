@@ -1,4 +1,5 @@
 import React from "react";
+import { SecondaryButton } from "../../styles/CommonComponents";
 import {
   BackgroundProfile,
   PrimaryButton,
@@ -7,10 +8,10 @@ import {
   ContainerButtons,
   ContainerInfoProfile,
   TitleBanner,
-  SecondaryButton,
 } from "./BannerMain.style";
 
 export const BannerMain = () => {
+  const width = "100%";
   return (
     <ContainerBannerMain id="banner-main">
       <ContainerBackgroundProfile>
@@ -25,8 +26,9 @@ export const BannerMain = () => {
           Robert Ramos <span>& Soy Full Stack Developer</span>
         </TitleBanner>
         <p>
-        <strong>Desarrollador Full Stack</strong> en tecnologias javascript. Especializado en el
-          stack <b>MERN (MongoDB, ExpressJS, ReactJS Y NodeJS).</b>
+          <strong>Desarrollador Full Stack</strong> en tecnologias javascript.
+          Especializado en el stack{" "}
+          <b>MERN (MongoDB, ExpressJS, ReactJS Y NodeJS).</b>
         </p>
         <ContainerButtons>
           <PrimaryButton
