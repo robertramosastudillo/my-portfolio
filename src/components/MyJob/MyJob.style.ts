@@ -149,14 +149,12 @@ export const SecondaryButton = styled.a`
   text-decoration: none;
   background-color: #fcfaff;
   font-size: 14px;
-  /* color: #9168f7; */
-  color: #7e6d9e;
+  color: #9168f7;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   height: 45px;
   width: 143px;
-  /* border: 1px solid #9168f7; */
-  border: 1px solid #7e6d9e;
+  border: 1px solid #9168f7;
   border-radius: 4px;
   cursor: pointer;
 
@@ -251,8 +249,7 @@ export const ContainerButtons = styled.div`
 
 export const LinkButton = styled.a`
   font-size: 14px;
-  /* color: #6838F2; */
-  color: #7e6d9e;
+  color: #6838F2;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
