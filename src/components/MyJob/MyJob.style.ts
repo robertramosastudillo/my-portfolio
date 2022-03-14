@@ -182,7 +182,7 @@ export const ContainerOtherProyects = styled.div`
   }
 `;
 
-export const TitleOtherProyects = styled.h4`
+export const TitleOtherProyects = styled.h2`
   font-size: 24px;
   color: #6838f2;
   font-family: "Poppins", sans-serif;
