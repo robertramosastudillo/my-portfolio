@@ -249,7 +249,8 @@ export const ContainerButtons = styled.div`
 
 export const LinkButton = styled.a`
   font-size: 14px;
-  color: #6838F2;
+  /* color: #6838F2; */
+  color: #7e6d9e;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
