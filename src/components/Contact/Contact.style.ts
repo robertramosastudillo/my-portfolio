@@ -6,7 +6,6 @@ export const ContainerContact = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 20px 0px 20px;
-  /* border: 1px solid red; */
 
   @media (min-width: 768px) {
     padding: 0px 48px 0px 48px;

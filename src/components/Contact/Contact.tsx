@@ -62,7 +62,12 @@ export const Contact = () => {
         <ContainerContactIcons>
           {socialMedia.map(({ id, image, title, url }) => (
             <BgItem key={id} href={url} target="_blank">
-              <ItemImage src={`social-media/${image}`} alt={title} />
+              <ItemImage
+                src={`social-media/${image}`}
+                alt={title}
+                width="24"
+                height="24"
+              />
             </BgItem>
           ))}
         </ContainerContactIcons>
