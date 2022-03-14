@@ -149,12 +149,14 @@ export const SecondaryButton = styled.a`
   text-decoration: none;
   background-color: #fcfaff;
   font-size: 14px;
-  color: #9168f7;
+  /* color: #9168f7; */
+  color: #7e6d9e;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   height: 45px;
   width: 143px;
-  border: 1px solid #9168f7;
+  /* border: 1px solid #9168f7; */
+  border: 1px solid #7e6d9e;
   border-radius: 4px;
   cursor: pointer;
 
