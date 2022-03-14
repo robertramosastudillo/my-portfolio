@@ -149,7 +149,8 @@ export const SecondaryButton = styled.a`
   text-decoration: none;
   background-color: #fcfaff;
   font-size: 14px;
-  color: #9168f7;
+  /* color: #9168f7; */
+  color: #b09de0;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   height: 45px;
@@ -193,7 +194,8 @@ export const TitleOtherProyects = styled.h4`
 
   span {
     display: block;
-    color: #caaffd;
+    /* color: #caaffd; */
+    color: #b09de0;
     font-weight: 400;
   }
 
