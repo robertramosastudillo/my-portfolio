@@ -4,9 +4,9 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_GOOGLE_TAG_MANAGER: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER,
   },
-  // images: {
-  //   domains: ['res.cloudinary.com'],
-  // },
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 };
 
 module.exports = nextConfig;

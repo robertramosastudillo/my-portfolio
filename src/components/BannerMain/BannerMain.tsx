@@ -15,7 +15,7 @@ export const BannerMain = () => {
     <ContainerBannerMain id="banner-main">
       <ContainerBackgroundProfile>
         <BackgroundProfile
-          src="banner-main/profile.svg"
+          src="https://res.cloudinary.com/dzosyypdq/image/upload/v1647291450/bannerMain/profile_jmboxw.svg"
           alt="Perfil Robert Andres Ramos"
         />
       </ContainerBackgroundProfile>
