@@ -121,6 +121,7 @@ export const NavLink: any = styled(Link)`
   cursor: pointer;
   position: relative;
   text-decoration: none;
+  color: #6838F2;
 
   &:before {
     content: "";
