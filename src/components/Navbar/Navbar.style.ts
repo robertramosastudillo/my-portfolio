@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
-export const NavbarStyle = styled.nav`
+export const NavbarStyle = styled.div`
   width: 100%;
   height: 55px;
   padding: 0 20px;
@@ -81,7 +81,7 @@ export const StyledBurger: any = styled.div`
 
 // RIGHT NAVBAR
 
-export const Ul: any = styled.ul`
+export const Ul: any = styled.span`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;

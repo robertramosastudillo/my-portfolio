@@ -26,81 +26,71 @@ export const Navbar = () => {
       </StyledBurger>
       <Ul open={open}>
         <RightNavbarHeader>
-          <li>
-            <NavLinkLogo
-              to="banner-main"
-              spy={true}
-              smooth={true}
-              duration={800}
-              onClick={() => setOpen(!open)}
-              href="/"
-            >
-              <RightNavbarHeaderTitle>Robert Ramos</RightNavbarHeaderTitle>
-              <RightNavbarHeaderSubTitle>
-                Full Stack Developer
-              </RightNavbarHeaderSubTitle>
-            </NavLinkLogo>
-          </li>
+          <NavLinkLogo
+            to="banner-main"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setOpen(!open)}
+            href="/"
+          >
+            <RightNavbarHeaderTitle>Robert Ramos</RightNavbarHeaderTitle>
+            <RightNavbarHeaderSubTitle>
+              Full Stack Developer
+            </RightNavbarHeaderSubTitle>
+          </NavLinkLogo>
         </RightNavbarHeader>
         {/* <NavLink> */}
-        <li>
-          <NavLink
-            to="about-me"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-            activeClass="active"
-            href="/"
-          >
-            01. Sobre mí
-          </NavLink>
-        </li>
+        <NavLink
+          to="about-me"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+          href="/"
+        >
+          01. Sobre mí
+        </NavLink>
         {/* </NavLink>
         <NavLink> */}
-        <li>
-          <NavLink
-            to="experience"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-            activeClass="active"
-            href="/"
-          >
-            02. Experiencia
-          </NavLink>
-        </li>
+        <NavLink
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+          href="/"
+        >
+          02. Experiencia
+        </NavLink>
         {/* </NavLink>
         <NavLink> */}
-        <li>
-          <NavLink
-            to="my-job"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-            activeClass="active"
-            href="/"
-          >
-            03. Mi trabajo
-          </NavLink>
-        </li>
+        <NavLink
+          to="my-job"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+          href="/"
+        >
+          03. Mi trabajo
+        </NavLink>
         {/* </NavLink>
         <NavLink> */}
-        <li>
-          <NavLink
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => setOpen(!open)}
-            activeClass="active"
-            href="/"
-          >
-            04. Contacto
-          </NavLink>
-        </li>
+        <NavLink
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => setOpen(!open)}
+          activeClass="active"
+          href="/"
+        >
+          04. Contacto
+        </NavLink>
         {/* </NavLink> */}
       </Ul>
     </NavbarStyle>
