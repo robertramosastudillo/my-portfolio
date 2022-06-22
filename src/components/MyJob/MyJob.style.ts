@@ -83,6 +83,10 @@ export const ContainerMyJob = styled.section`
     }
   }
 
+  @media (min-width: 768px) {
+    padding: 130px 0px 0px 0px;
+  }
+
   @media (min-width: 1440px) {
     padding: 136px 0px 0px 0px;
   }

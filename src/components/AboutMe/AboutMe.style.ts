@@ -5,10 +5,10 @@ export const ContainerAboutMe = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 20px 0px 20px;
+  padding: 130px 20px 0px 20px;
 
   @media (min-width: 768px) {
-    padding: 100px 48px 0px 48px;
+    padding: 130px 48px 0px 48px;
   }
 
   @media (min-width: 1024px) {

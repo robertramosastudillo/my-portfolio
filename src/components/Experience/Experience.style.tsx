@@ -5,14 +5,14 @@ export const ContainerExperience = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 20px 0px 20px;
+  padding: 130px 20px 0px 20px;
 
   @media (min-width: 768px) {
-    padding: 100px 48px 0px 48px;
+    padding: 130px 48px 0px 48px;
   }
 
   @media (min-width: 1024px) {
-    padding: 96px 92px 0px 92px;
+    padding: 130px 92px 0px 92px;
   }
 
   @media (min-width: 1440px) {
