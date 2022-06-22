@@ -22,7 +22,7 @@ export const ContainerAboutMe = styled.section`
   }
 
   @media (min-width: 1440px) {
-    padding: 136px 92px 0px 92px;
+    padding: 140px 92px 0px 92px;
   }
 `;
 
@@ -165,6 +165,7 @@ export const BgAboutMeSecondary = styled.img`
   width: 100%;
   height: 100%;
 `;
+
 export const BgAboutMeIcon = styled.img`
   width: 132px;
   height: 132px;

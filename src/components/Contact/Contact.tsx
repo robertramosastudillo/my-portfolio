@@ -1,7 +1,7 @@
 import React from "react";
 import socialMedia from "../../mocks/socialMedia.json";
 
-import { SectionContainer, SectionTitle } from "../../styles/CommonComponents";
+import { SectionTitle } from "../../styles/CommonComponents";
 import {
   ContainerContact,
   ContainerInfoContact,
@@ -11,12 +11,23 @@ import {
   ItemImage,
   ContainerContactCopyright,
   ContactTextSend,
+  ContainerBackgroundContact,
+  ContainerOfCoContact,
+  BgContact,
+  // ContainerSecondaryHexan,
+  BgContactSecondary,
+  ContainerFooter,
 } from "./Contact.style";
 
 export const Contact = () => {
   return (
-    <SectionContainer>
-      <ContainerContact id="contact">
+    <ContainerContact id="contact">
+      <ContainerBackgroundContact>
+        <BgContact src="about-me/hexagon-bg-primary.svg" alt="Bg Contact" />
+        <BgContactSecondary src="contact/message.svg" alt="Contactame" />
+      </ContainerBackgroundContact>
+
+      <ContainerOfCoContact>
         <ContainerInfoContact>
           <SectionTitle>
             <span>04.</span>Contácto
@@ -40,6 +51,7 @@ export const Contact = () => {
           <ContactText>+57 317 648 8465</ContactText>
           <p>O envíame un mensaje directo en mis redes sociales.</p>
         </ContainerInfoContact>
+
         <ContainerContactIcons>
           {socialMedia.map(({ id, image, title, url }) => (
             <BgItem key={id} href={url} target="_blank">
@@ -57,7 +69,7 @@ export const Contact = () => {
           <p>Robert Ramos</p>
           <p>Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
         </ContainerContactCopyright>
-      </ContainerContact>
-    </SectionContainer>
+      </ContainerOfCoContact>
+    </ContainerContact>
   );
 };

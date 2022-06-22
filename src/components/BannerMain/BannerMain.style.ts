@@ -19,7 +19,7 @@ export const ContainerBannerMain = styled.section`
   }
 
   @media (min-width: 1440px) {
-    padding: 136px 92px 0px 92px;
+    padding: 180px 92px 0px 92px;
   }
 `;
 

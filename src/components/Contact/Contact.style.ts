@@ -5,18 +5,25 @@ export const ContainerContact = styled.section`
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 20px 0px 20px;
+  padding: 130px 20px 0px 20px;
 
   @media (min-width: 768px) {
-    padding: 0px 48px 0px 48px;
+    padding: 130px 48px 0px 48px;
   }
 
   @media (min-width: 1024px) {
     padding: 0px 92px 0px 92px;
   }
 
-  @media (min-width: 1440px) {
-    padding: 0px 92px 0px 92px;
+  @media (min-width: 1280px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 164px 92px 80px 92px;
+  }
+
+  @media (min-width: 1440px) { 
+  padding: 200px 92px 150px 92px;
   }
 `;
 
@@ -109,4 +116,88 @@ export const ItemImage = styled.img`
 
 export const ContainerContactCopyright = styled.div`
   margin: 0px 0px 20px 0;
+`;
+
+/////////New//////////
+export const ContainerBackgroundContact = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  width: 264px;
+  height: 264px;
+
+  @media (min-width: 375px) {
+    width: 280px;
+    height: 280px;
+  }
+
+  @media (min-width: 768px) {
+    width: 408px;
+    height: 408px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 456px;
+    height: 456px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 556px;
+    height: 556px;
+  }
+`;
+export const ContainerOfCoContact = styled.div``;
+
+export const BgContact = styled.img`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: rotateHexan 4s ease-in-out alternate-reverse infinite;
+
+  @keyframes rotateHexan {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
+    }
+  }
+`;
+
+export const BgContactSecondary = styled.img`
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  top: 25%;
+  bottom: 25%;
+  animation: rotateIcon 4s ease-in-out alternate-reverse infinite;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 228px;
+    height: 228px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 260px;
+    height: 260px;
+  }
+
+  @keyframes rotateIcon {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+    }
+  }
 `;
