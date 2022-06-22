@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "feactured-project-1.svg",
-    "name": "Freelance project",
+    "name": "Personal project",
     "year": "2022",
     "type_project": "Frontend Developer",
     "description": "Uno de mis proyectos destacados es esta página web la cual es mi portafolio de trabajo en donde les expongo los diferentes proyectos que he realizado desde que inicie en el mundo del desarrollo.",
@@ -20,20 +20,17 @@
   },
   {
     "id": 2,
-    "image": "feactured-project-3.svg",
-    "name": "Freelance project 2",
-    "year": "2021",
-    "type_project": "Full Stack Developer",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "image": "feactured-project-4.svg",
+    "name": "Agency project",
+    "year": "2021 - 2022",
+    "type_project": "Frontend Developer",
+    "description": "Desarrollo de Plataforma Web Responsive para dispositivos mobiles y de escritorio que permite guiar al usuario en un proceso donde podra generar una solicitud para la obtención de un crédito digital.",
     "tecnologies": [
-      { "techId": 1, "tech_title": "ReactJS", "tech_image": "react.svg" },
-      { "techId": 2, "tech_title": "Typescript", "tech_image": "ts.svg" },
-      {
-        "techId": 3,
-        "tech_title": "Styled Components",
-        "tech_image": "styled-components.svg"
-      }
+      { "techId": 1, "tech_title": "HTML", "tech_image": "html.svg" },
+      { "techId": 2, "tech_title": "SASS", "tech_image": "sass.svg" },
+      { "techId": 3, "tech_title": "Javascript", "tech_image": "js.svg" },
+      { "techId": 4, "tech_title": "Typescript", "tech_image": "ts.svg" }
     ],
-    "link": "https://github.com/robertramosastudillo?tab=repositories"
+    "link": "https://tuya.com.co/creditos-digitales"
   }
 ]
