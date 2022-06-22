@@ -14,9 +14,7 @@ import {
   ContainerBackgroundContact,
   ContainerOfCoContact,
   BgContact,
-  // ContainerSecondaryHexan,
   BgContactSecondary,
-  ContainerFooter,
 } from "./Contact.style";
 
 export const Contact = () => {
