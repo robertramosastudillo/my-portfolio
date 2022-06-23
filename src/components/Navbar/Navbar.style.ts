@@ -41,9 +41,13 @@ export interface StyledBurgerProps {
   onClick?: MouseEventHandler<HTMLDivElement> | undefined;
 }
 
-
 // BURGER MENU
-export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never> = styled.div`
+export const StyledBurger: StyledComponent<
+  "div",
+  any,
+  StyledBurgerProps,
+  never
+> = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -52,6 +56,11 @@ export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never>
   z-index: 20;
   display: none;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    top: 24px;
+    right: 40px;
+  }
 
   @media (max-width: 768px) {
     display: flex;
@@ -62,13 +71,15 @@ export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never>
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }: StyledBurgerProps) => (open ? "#fff" : "#6838F2")};
+    background-color: ${({ open }: StyledBurgerProps) =>
+      open ? "#fff" : "#6838F2"};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }: StyledBurgerProps) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }: StyledBurgerProps) =>
+        open ? "rotate(45deg)" : "rotate(0)"};
       top: 0;
     }
 
@@ -79,7 +90,8 @@ export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never>
     }
 
     &:nth-child(3) {
-      transform: ${({ open }: StyledBurgerProps) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }: StyledBurgerProps) =>
+        open ? "rotate(-45deg)" : "rotate(0)"};
       bottom: 0;
     }
   }
@@ -88,7 +100,12 @@ export const StyledBurger: StyledComponent<"div", any, StyledBurgerProps, never>
 
 // RIGHT NAVBAR
 
-export const Ul: StyledComponent<"span", any, StyledBurgerProps, never> = styled.span`
+export const Ul: StyledComponent<
+  "span",
+  any,
+  StyledBurgerProps,
+  never
+> = styled.span`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -128,7 +145,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #6838F2;
+  color: #6838f2;
 
   &:before {
     content: "";
