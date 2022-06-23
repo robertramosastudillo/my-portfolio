@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import socialMedia from "../../mocks/socialMedia.json";
 
 import { SectionTitle } from "../../styles/CommonComponents";
@@ -16,13 +16,50 @@ import {
   BgContact,
   BgContactSecondary,
 } from "./Contact.style";
+import carousel from "../../mocks/carouselContact.json";
+
+interface CarouselProps {
+  text: string;
+  image: string;
+}
 
 export const Contact = () => {
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [selectedImage, setSelectedImage] = useState<string>(carousel[0].image);
+  const [selectedText, setSelectedText] = useState<string>(carousel[0].text);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      selectNewImage(selectedIndex, carousel);
+    }, 4000);
+    return () => clearInterval(interval);
+  });
+
+  const selectNewImage = (
+    index: number,
+    carousel: CarouselProps[],
+    next: boolean = true
+  ) => {
+    const condition = next ? index < carousel.length - 1 : index > 0;
+    const nextIndex = next
+      ? condition
+        ? index + 1
+        : 0
+      : condition
+      ? index - 1
+      : carousel.length - 1;
+    setSelectedImage(carousel[nextIndex].image);
+    setSelectedText(carousel[nextIndex].text);
+    setSelectedIndex(nextIndex);
+  };
   return (
     <ContainerContact id="contact">
       <ContainerBackgroundContact>
         <BgContact src="about-me/hexagon-bg-primary.svg" alt="Bg Contact" />
-        <BgContactSecondary src="contact/message.svg" alt="Contactame" />
+        <BgContactSecondary
+          src={`contact/${selectedImage}`}
+          alt={selectedText}
+        />
       </ContainerBackgroundContact>
 
       <ContainerOfCoContact>

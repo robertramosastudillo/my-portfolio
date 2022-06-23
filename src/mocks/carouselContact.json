@@ -1,0 +1,6 @@
+[
+  { "image": "message.svg", "text": "Mensaje" },
+  { "image": "email.svg", "text": "Correo Electronico" },
+  { "image": "map.svg", "text": "Mapa" },
+  { "image": "phone.svg", "text": "Celular" }
+]
