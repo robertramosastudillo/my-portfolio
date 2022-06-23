@@ -85,7 +85,7 @@ export const NotFoundContainer = styled.div`
   align-items: center;
 
   @media (min-width: 768px) {
-    padding: 160px 20px 0px 20px;
+    padding: 140px 20px 0px 20px;
   }
 
   @media (min-width: 1280px) {
